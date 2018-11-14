@@ -1,0 +1,106 @@
+2018-11-14 20:39:57.041 DEBUG 4188 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-14 20:39:57.048 DEBUG 4188 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2018-11-14 21:50:05.228  INFO 6680 --- [main] com.springboot.SpringbootWebApplication  : Starting SpringbootWebApplication on Li with PID 6680 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-14 21:50:05.233  INFO 6680 --- [main] com.springboot.SpringbootWebApplication  : The following profiles are active: dev
+2018-11-14 21:50:05.723  WARN 6680 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot.mapper]' package. Please check your configuration.
+2018-11-14 21:50:05.861  WARN 6680 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
+2018-11-14 21:50:05.877  WARN 6680 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
+2018-11-14 21:50:06.509  INFO 6680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-14 21:50:06.523  INFO 6680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-14 21:50:06.523  INFO 6680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-14 21:50:06.538  INFO 6680 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-14 21:50:06.632  INFO 6680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-14 21:50:06.632 DEBUG 6680 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-14 21:50:06.632  INFO 6680 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1367 ms
+2018-11-14 21:50:06.648  INFO 6680 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-14 21:50:06.663  INFO 6680 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-14 21:50:06.663  INFO 6680 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-14 21:50:06.663  INFO 6680 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-14 21:50:06.663  INFO 6680 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-14 21:50:06.749 DEBUG 6680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-14 21:50:06.843  INFO 6680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-14 21:50:06.843 DEBUG 6680 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-14 21:50:06.890 DEBUG 6680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2018-11-14 21:50:06.898 DEBUG 6680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-14 21:50:06.907 DEBUG 6680 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-14 21:50:06.960  INFO 6680 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-14 21:50:07.179  INFO 6680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-14 21:50:07.179  INFO 6680 --- [main] com.springboot.SpringbootWebApplication  : Started SpringbootWebApplication in 2.234 seconds (JVM running for 2.941)
+2018-11-14 21:50:22.485  INFO 6680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-14 21:50:22.486  INFO 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-14 21:50:22.486 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-14 21:50:22.493 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-14 21:50:22.493  INFO 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-11-14 21:50:22.499 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-14 21:50:22.511 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-14 21:50:22.727 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-14 21:50:22.752 DEBUG 6680 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
+2018-11-14 21:50:22.754 DEBUG 6680 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-14 21:50:22.774 DEBUG 6680 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-14 21:50:22.960 DEBUG 6680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-14 21:50:22.961 DEBUG 6680 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-14 21:50:22.986 DEBUG 6680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-14 21:50:26.082 DEBUG 6680 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/index", parameters={}
+2018-11-14 21:50:26.084 DEBUG 6680 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.springboot.controller.home.HomeController.index()
+2018-11-14 21:50:26.091 DEBUG 6680 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-14 21:50:26.094 DEBUG 6680 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-14 21:50:34.592  INFO 6680 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-14 21:50:34.610  INFO 6680 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-14 21:50:38.281  INFO 1284 --- [main] com.springboot.SpringbootWebApplication  : Starting SpringbootWebApplication on Li with PID 1284 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-14 21:50:38.281  INFO 1284 --- [main] com.springboot.SpringbootWebApplication  : The following profiles are active: dev
+2018-11-14 21:50:38.656  WARN 1284 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot.mapper]' package. Please check your configuration.
+2018-11-14 21:50:38.723  WARN 1284 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
+2018-11-14 21:50:38.738  WARN 1284 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
+2018-11-14 21:50:39.202  INFO 1284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-14 21:50:39.218  INFO 1284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-14 21:50:39.218  INFO 1284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-14 21:50:39.234  INFO 1284 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-14 21:50:39.323  INFO 1284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-14 21:50:39.323 DEBUG 1284 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-14 21:50:39.323  INFO 1284 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 990 ms
+2018-11-14 21:50:39.339  INFO 1284 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-14 21:50:39.354  INFO 1284 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-14 21:50:39.354  INFO 1284 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-14 21:50:39.354  INFO 1284 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-14 21:50:39.354  INFO 1284 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-14 21:50:39.510 DEBUG 1284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-14 21:50:39.635  INFO 1284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-14 21:50:39.651 DEBUG 1284 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-14 21:50:39.682 DEBUG 1284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2018-11-14 21:50:39.691 DEBUG 1284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-14 21:50:39.706 DEBUG 1284 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-14 21:50:39.739  INFO 1284 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-14 21:50:39.941  INFO 1284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-14 21:50:39.941  INFO 1284 --- [main] com.springboot.SpringbootWebApplication  : Started SpringbootWebApplication in 1.965 seconds (JVM running for 2.588)
+2018-11-14 21:50:44.231  INFO 1284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-14 21:50:44.233  INFO 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-14 21:50:44.233 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-14 21:50:44.241 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-14 21:50:44.241  INFO 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2018-11-14 21:50:44.250 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/index", parameters={}
+2018-11-14 21:50:44.257 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-14 21:50:44.259 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2018-11-14 21:50:44.260 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2018-11-14 21:50:44.265 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2018-11-14 21:50:44.271 DEBUG 1284 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-14 21:50:44.288 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2018-11-14 21:50:44.294 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2018-11-14 21:50:44.503 DEBUG 1284 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-14 21:50:44.504 DEBUG 1284 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-14 21:50:44.525 DEBUG 1284 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-14 21:50:46.585 DEBUG 1284 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-14 21:50:46.586 DEBUG 1284 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.springboot.controller.home.HomeController.index()
+2018-11-14 21:50:46.588 DEBUG 1284 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-14 21:50:46.801 DEBUG 1284 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-14 21:50:46.816 DEBUG 1284 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
+2018-11-14 21:50:46.818 DEBUG 1284 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-14 21:50:46.824 DEBUG 1284 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2018-11-14 21:50:48.006 DEBUG 1284 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-14 21:50:48.008 DEBUG 1284 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.springboot.controller.home.HomeController.index()
+2018-11-14 21:50:48.011 DEBUG 1284 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-14 21:50:48.021 DEBUG 1284 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-14 21:50:48.144 DEBUG 1284 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-14 21:50:48.145 DEBUG 1284 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-14 21:50:48.147 DEBUG 1284 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-14 21:51:19.863  INFO 1284 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-14 21:51:19.880  INFO 1284 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
