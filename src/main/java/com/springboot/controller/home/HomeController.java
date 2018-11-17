@@ -20,5 +20,5 @@ public class HomeController {
         view.addObject("desc", "欢迎进入battcn-web 系统");
         return view;
     }
-
+	
 }
