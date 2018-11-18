@@ -1,4 +1,4 @@
-package com.coins.common;
+package com.coins.utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -1,4 +1,4 @@
-package com.coins.common;
+package com.coins.utils;
 
 import java.util.Random;
 import java.util.UUID;
