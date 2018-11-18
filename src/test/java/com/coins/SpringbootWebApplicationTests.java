@@ -1,4 +1,4 @@
-package com.springboot;
+package com.coins;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.springboot.entity.Role;
-import com.springboot.service.RoleService;
+import com.coins.entity.Role;
+import com.coins.service.RoleService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

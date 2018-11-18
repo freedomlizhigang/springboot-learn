@@ -1,4 +1,4 @@
-package com.springboot;
+package com.coins;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,9 +11,9 @@ import tk.mybatis.spring.annotation.MapperScan;
 @RestController
 @SpringBootApplication(exclude={HibernateJpaAutoConfiguration.class})
 @EnableCaching
-@MapperScan("com.springboot.mapper")
-public class SpringbootWebApplication {
+@MapperScan("com.coins.mapper")
+public class CoinsApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootWebApplication.class, args);
+		SpringApplication.run(CoinsApplication.class, args);
 	}
 }

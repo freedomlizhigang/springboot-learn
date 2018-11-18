@@ -1,4 +1,4 @@
-package com.springboot.controller.home;
+package com.coins.controller.home;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

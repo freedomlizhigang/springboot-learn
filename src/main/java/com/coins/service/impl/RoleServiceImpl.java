@@ -1,4 +1,4 @@
-package com.springboot.service.impl;
+package com.coins.service.impl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,8 +10,8 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import com.springboot.entity.Role;
-import com.springboot.service.RoleService;
+import com.coins.entity.Role;
+import com.coins.service.RoleService;
 
 @Service
 public class RoleServiceImpl implements RoleService {

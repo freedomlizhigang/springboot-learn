@@ -1,828 +1,120 @@
-2018-11-14 20:39:57.041 DEBUG 4188 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
-2018-11-14 20:39:57.048 DEBUG 4188 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2018-11-14 21:50:05.228  INFO 6680 --- [main] com.springboot.SpringbootWebApplication  : Starting SpringbootWebApplication on Li with PID 6680 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
-2018-11-14 21:50:05.233  INFO 6680 --- [main] com.springboot.SpringbootWebApplication  : The following profiles are active: dev
-2018-11-14 21:50:05.723  WARN 6680 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot.mapper]' package. Please check your configuration.
-2018-11-14 21:50:05.861  WARN 6680 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-14 21:50:05.877  WARN 6680 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-14 21:50:06.509  INFO 6680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-11-14 21:50:06.523  INFO 6680 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-11-14 21:50:06.523  INFO 6680 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-11-14 21:50:06.538  INFO 6680 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
-2018-11-14 21:50:06.632  INFO 6680 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-11-14 21:50:06.632 DEBUG 6680 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2018-11-14 21:50:06.632  INFO 6680 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1367 ms
-2018-11-14 21:50:06.648  INFO 6680 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-11-14 21:50:06.663  INFO 6680 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-11-14 21:50:06.663  INFO 6680 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-11-14 21:50:06.663  INFO 6680 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-11-14 21:50:06.663  INFO 6680 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-11-14 21:50:06.749 DEBUG 6680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-14 21:50:06.843  INFO 6680 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-14 21:50:06.843 DEBUG 6680 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-14 21:50:06.890 DEBUG 6680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2018-11-14 21:50:06.898 DEBUG 6680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-14 21:50:06.907 DEBUG 6680 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-14 21:50:06.960  INFO 6680 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-14 21:50:07.179  INFO 6680 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-11-14 21:50:07.179  INFO 6680 --- [main] com.springboot.SpringbootWebApplication  : Started SpringbootWebApplication in 2.234 seconds (JVM running for 2.941)
-2018-11-14 21:50:22.485  INFO 6680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-11-14 21:50:22.486  INFO 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-11-14 21:50:22.486 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2018-11-14 21:50:22.493 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2018-11-14 21:50:22.493  INFO 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2018-11-14 21:50:22.499 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
-2018-11-14 21:50:22.511 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-2018-11-14 21:50:22.727 DEBUG 6680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-14 21:50:22.752 DEBUG 6680 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
-2018-11-14 21:50:22.754 DEBUG 6680 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2018-11-14 21:50:22.774 DEBUG 6680 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-14 21:50:22.960 DEBUG 6680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2018-11-14 21:50:22.961 DEBUG 6680 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
-2018-11-14 21:50:22.986 DEBUG 6680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-14 21:50:26.082 DEBUG 6680 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/index", parameters={}
-2018-11-14 21:50:26.084 DEBUG 6680 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.springboot.controller.home.HomeController.index()
-2018-11-14 21:50:26.091 DEBUG 6680 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-2018-11-14 21:50:26.094 DEBUG 6680 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-14 21:50:34.592  INFO 6680 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-11-14 21:50:34.610  INFO 6680 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-14 21:50:38.281  INFO 1284 --- [main] com.springboot.SpringbootWebApplication  : Starting SpringbootWebApplication on Li with PID 1284 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
-2018-11-14 21:50:38.281  INFO 1284 --- [main] com.springboot.SpringbootWebApplication  : The following profiles are active: dev
-2018-11-14 21:50:38.656  WARN 1284 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot.mapper]' package. Please check your configuration.
-2018-11-14 21:50:38.723  WARN 1284 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-14 21:50:38.738  WARN 1284 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-14 21:50:39.202  INFO 1284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-11-14 21:50:39.218  INFO 1284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-11-14 21:50:39.218  INFO 1284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-11-14 21:50:39.234  INFO 1284 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
-2018-11-14 21:50:39.323  INFO 1284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-11-14 21:50:39.323 DEBUG 1284 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2018-11-14 21:50:39.323  INFO 1284 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 990 ms
-2018-11-14 21:50:39.339  INFO 1284 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-11-14 21:50:39.354  INFO 1284 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-11-14 21:50:39.354  INFO 1284 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-11-14 21:50:39.354  INFO 1284 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-11-14 21:50:39.354  INFO 1284 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-11-14 21:50:39.510 DEBUG 1284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-14 21:50:39.635  INFO 1284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-14 21:50:39.651 DEBUG 1284 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-14 21:50:39.682 DEBUG 1284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2018-11-14 21:50:39.691 DEBUG 1284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-14 21:50:39.706 DEBUG 1284 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-14 21:50:39.739  INFO 1284 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-14 21:50:39.941  INFO 1284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-11-14 21:50:39.941  INFO 1284 --- [main] com.springboot.SpringbootWebApplication  : Started SpringbootWebApplication in 1.965 seconds (JVM running for 2.588)
-2018-11-14 21:50:44.231  INFO 1284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-11-14 21:50:44.233  INFO 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-11-14 21:50:44.233 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2018-11-14 21:50:44.241 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2018-11-14 21:50:44.241  INFO 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2018-11-14 21:50:44.250 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/index", parameters={}
-2018-11-14 21:50:44.257 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2018-11-14 21:50:44.259 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2018-11-14 21:50:44.260 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2018-11-14 21:50:44.265 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2018-11-14 21:50:44.271 DEBUG 1284 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-11-14 21:50:44.288 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2018-11-14 21:50:44.294 DEBUG 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2018-11-14 21:50:44.503 DEBUG 1284 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2018-11-14 21:50:44.504 DEBUG 1284 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
-2018-11-14 21:50:44.525 DEBUG 1284 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-14 21:50:46.585 DEBUG 1284 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
-2018-11-14 21:50:46.586 DEBUG 1284 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.springboot.controller.home.HomeController.index()
-2018-11-14 21:50:46.588 DEBUG 1284 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-2018-11-14 21:50:46.801 DEBUG 1284 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-14 21:50:46.816 DEBUG 1284 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
-2018-11-14 21:50:46.818 DEBUG 1284 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2018-11-14 21:50:46.824 DEBUG 1284 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
-2018-11-14 21:50:48.006 DEBUG 1284 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
-2018-11-14 21:50:48.008 DEBUG 1284 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.springboot.controller.home.HomeController.index()
-2018-11-14 21:50:48.011 DEBUG 1284 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-2018-11-14 21:50:48.021 DEBUG 1284 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-14 21:50:48.144 DEBUG 1284 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2018-11-14 21:50:48.145 DEBUG 1284 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
-2018-11-14 21:50:48.147 DEBUG 1284 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-14 21:51:19.863  INFO 1284 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-11-14 21:51:19.880  INFO 1284 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 08:29:01.731  INFO 8576 --- [main] com.springboot.SpringbootWebApplication  : Starting SpringbootWebApplication on SC-201710141551 with PID 8576 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
-2018-11-17 08:29:01.731  INFO 8576 --- [main] com.springboot.SpringbootWebApplication  : The following profiles are active: dev
-2018-11-17 08:29:02.043  WARN 8576 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot.mapper]' package. Please check your configuration.
-2018-11-17 08:29:02.134  WARN 8576 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 08:29:02.134  WARN 8576 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 08:29:02.684  INFO 8576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-11-17 08:29:02.700  INFO 8576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-11-17 08:29:02.700  INFO 8576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-11-17 08:29:02.700  INFO 8576 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
-2018-11-17 08:29:02.700  INFO 8576 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2018-11-17 08:29:02.700  INFO 8576 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2018-11-17 08:29:02.778  INFO 8576 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
-2018-11-17 08:29:02.934  INFO 8576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-11-17 08:29:02.934 DEBUG 8576 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2018-11-17 08:29:02.934  INFO 8576 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1172 ms
-2018-11-17 08:29:02.950  INFO 8576 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-11-17 08:29:02.965  INFO 8576 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-11-17 08:29:02.965  INFO 8576 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-11-17 08:29:02.965  INFO 8576 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-11-17 08:29:02.965  INFO 8576 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-11-17 08:29:03.075 DEBUG 8576 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 08:29:03.186  INFO 8576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 08:29:03.202 DEBUG 8576 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 08:29:03.233 DEBUG 8576 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 08:29:03.233 DEBUG 8576 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 08:29:03.249 DEBUG 8576 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 08:29:03.327  INFO 8576 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 08:29:03.484  INFO 8576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-11-17 08:29:03.484  INFO 8576 --- [main] com.springboot.SpringbootWebApplication  : Started SpringbootWebApplication in 1.996 seconds (JVM running for 2.557)
-2018-11-17 08:29:10.895  INFO 8576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-11-17 08:29:10.896  INFO 8576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-11-17 08:29:10.896 DEBUG 8576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2018-11-17 08:29:10.900 DEBUG 8576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2018-11-17 08:29:10.901  INFO 8576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2018-11-17 08:29:10.907 DEBUG 8576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
-2018-11-17 08:29:10.910 DEBUG 8576 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.springboot.controller.home.HomeController.index()
-2018-11-17 08:29:10.921 DEBUG 8576 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
-2018-11-17 08:29:11.194 DEBUG 8576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-17 08:29:11.204 DEBUG 8576 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
-2018-11-17 08:29:11.206 DEBUG 8576 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2018-11-17 08:29:11.215 DEBUG 8576 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-17 08:29:13.237 DEBUG 8576 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/roles", parameters={}
-2018-11-17 08:29:13.238 DEBUG 8576 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.springboot.entity.Role> com.springboot.controller.home.RoleController.queryRoles()
-2018-11-17 08:29:13.249  INFO 8576 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-11-17 08:29:14.455 ERROR 8576 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
-
-java.sql.SQLException: Access denied for user 'Sx3jdCwhCZAmxWie'@'123.180.249.176' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) [HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) [HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.2.0.jar:na]
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) [spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) [spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) [spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:612) [spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669) [spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700) [spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:712) [spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:763) [spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at com.springboot.controller.home.RoleController.queryRoles(RoleController.java:25) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_11]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) [spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_11]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_11]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_11]
-
-2018-11-17 08:29:14.469 DEBUG 8576 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'Sx3jdCwhCZAmxWie'@'123.180.249.176' (using password: YES)
-2018-11-17 08:29:14.471 ERROR 8576 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'Sx3jdCwhCZAmxWie'@'123.180.249.176' (using password: YES)] with root cause
-
-java.sql.SQLException: Access denied for user 'Sx3jdCwhCZAmxWie'@'123.180.249.176' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207) ~[mysql-connector-java-8.0.13.jar:8.0.13]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.2.0.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.2.0.jar:na]
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:612) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:712) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:763) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at com.springboot.controller.home.RoleController.queryRoles(RoleController.java:25) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_11]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_11]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_11]
-	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_11]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_11]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_11]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_11]
-
-2018-11-17 08:29:14.477 DEBUG 8576 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2018-11-17 08:29:14.481 DEBUG 8576 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-11-17 08:29:14.489 DEBUG 8576 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2018-11-17 08:29:14.492 DEBUG 8576 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
-2018-11-17 08:29:14.722 DEBUG 8576 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2018-11-17 08:29:14.723 DEBUG 8576 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
-2018-11-17 08:29:14.732 DEBUG 8576 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-17 08:31:10.162  INFO 8576 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-11-17 08:31:10.177  INFO 8576 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 08:31:17.918  INFO 5980 --- [main] com.springboot.SpringbootWebApplication  : Starting SpringbootWebApplication on SC-201710141551 with PID 5980 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
-2018-11-17 08:31:17.918  INFO 5980 --- [main] com.springboot.SpringbootWebApplication  : The following profiles are active: dev
-2018-11-17 08:31:18.280  WARN 5980 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot.mapper]' package. Please check your configuration.
-2018-11-17 08:31:18.372  WARN 5980 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 08:31:18.372  WARN 5980 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 08:31:18.750  INFO 5980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-11-17 08:31:18.765  INFO 5980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-11-17 08:31:18.765  INFO 5980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-11-17 08:31:18.765  INFO 5980 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.18] using APR version [1.6.5].
-2018-11-17 08:31:18.765  INFO 5980 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2018-11-17 08:31:18.765  INFO 5980 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2018-11-17 08:31:18.765  INFO 5980 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1  11 Sep 2018]
-2018-11-17 08:31:18.921  INFO 5980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-11-17 08:31:18.921 DEBUG 5980 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2018-11-17 08:31:18.921  INFO 5980 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 972 ms
-2018-11-17 08:31:18.937  INFO 5980 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-11-17 08:31:18.937  INFO 5980 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-11-17 08:31:18.937  INFO 5980 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-11-17 08:31:18.937  INFO 5980 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-11-17 08:31:18.937  INFO 5980 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-11-17 08:31:19.031 DEBUG 5980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 08:31:19.207  INFO 5980 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 08:31:19.224 DEBUG 5980 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 08:31:19.255 DEBUG 5980 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 08:31:19.255 DEBUG 5980 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 08:31:19.271 DEBUG 5980 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 08:31:19.302  INFO 5980 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 08:31:19.448  INFO 5980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-11-17 08:31:19.463  INFO 5980 --- [main] com.springboot.SpringbootWebApplication  : Started SpringbootWebApplication in 1.764 seconds (JVM running for 2.336)
-2018-11-17 08:31:23.788  INFO 5980 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-11-17 08:31:23.788  INFO 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-11-17 08:31:23.788 DEBUG 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2018-11-17 08:31:23.793 DEBUG 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2018-11-17 08:31:23.793  INFO 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2018-11-17 08:31:23.805 DEBUG 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/roles", parameters={}
-2018-11-17 08:31:23.810 DEBUG 5980 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.util.List<com.springboot.entity.Role> com.springboot.controller.home.RoleController.queryRoles()
-2018-11-17 08:31:23.827  INFO 5980 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-11-17 08:31:24.324  INFO 5980 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-11-17 08:31:24.420 DEBUG 5980 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2018-11-17 08:31:24.421 DEBUG 5980 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.springboot.entity.Role@8a733f5, com.springboot.entity.Role@373b1592, com.springboot.entity.Role@11ca420f]]
-2018-11-17 08:31:24.461 DEBUG 5980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-17 08:31:24.665 DEBUG 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2018-11-17 08:31:24.669 DEBUG 5980 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
-2018-11-17 08:31:24.687 DEBUG 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2018-11-17 08:44:53.554  INFO 5980 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-11-17 08:44:53.568  INFO 5980 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 08:44:53.569  INFO 5980 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-11-17 08:44:53.585  INFO 5980 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-11-17 09:04:56.094  INFO 2604 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 2604 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:04:56.094  INFO 2604 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:04:56.126 DEBUG 2604 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15bb5034
-2018-11-17 09:04:58.009 DEBUG 2604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:04:58.214  INFO 2604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:04:58.230 DEBUG 2604 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:04:58.308 DEBUG 2604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:04:58.340 DEBUG 2604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:04:58.355 DEBUG 2604 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:04:58.466  INFO 2604 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:04:58.718  INFO 2604 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.858 seconds (JVM running for 3.558)
-2018-11-17 09:04:58.999  INFO 2604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-11-17 09:04:59.553  INFO 2604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-11-17 09:04:59.621  INFO 2604 --- [main] c.s.SpringbootWebApplicationTests        : [鏍规嵁鐢ㄦ埛鍚嶆煡璇 - [[com.springboot.entity.Role@2bc378f7]]
-2018-11-17 09:04:59.636 DEBUG 2604 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@15bb5034, started on Sat Nov 17 09:04:56 CST 2018
-2018-11-17 09:04:59.636  INFO 2604 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:04:59.636  INFO 2604 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-11-17 09:04:59.636  INFO 2604 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-11-17 09:07:36.600  INFO 7156 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 7156 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:07:36.600  INFO 7156 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:07:36.631 DEBUG 7156 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@15bb5034
-2018-11-17 09:07:38.194 DEBUG 7156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:07:38.499  INFO 7156 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:07:38.515 DEBUG 7156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:07:38.609 DEBUG 7156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:07:38.624 DEBUG 7156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:07:38.640 DEBUG 7156 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:07:38.750  INFO 7156 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:07:38.986  INFO 7156 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.621 seconds (JVM running for 3.314)
-2018-11-17 09:07:39.162  INFO 7156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-11-17 09:07:39.842  INFO 7156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-11-17 09:07:39.932  INFO 7156 --- [main] c.s.SpringbootWebApplicationTests        : [鏍规嵁鐢ㄦ埛鍚嶆煡璇 - [[com.springboot.entity.Role@10f7918f]]
-2018-11-17 09:07:39.932 DEBUG 7156 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@15bb5034, started on Sat Nov 17 09:07:36 CST 2018
-2018-11-17 09:07:39.932  INFO 7156 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:07:39.932  INFO 7156 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-11-17 09:07:39.932  INFO 7156 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-11-17 09:19:41.026  INFO 1824 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 1824 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:19:41.026 DEBUG 1824 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:19:41.026  INFO 1824 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:19:41.073 DEBUG 1824 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@17f9d882
-2018-11-17 09:19:42.659 DEBUG 1824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:19:42.919  INFO 1824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:19:42.950 DEBUG 1824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:19:43.045 DEBUG 1824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:19:43.060 DEBUG 1824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:19:43.076 DEBUG 1824 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:19:43.232  INFO 1824 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:19:43.547  INFO 1824 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.757 seconds (JVM running for 3.451)
-2018-11-17 09:19:43.836  INFO 1824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-11-17 09:19:44.515  INFO 1824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-11-17 09:19:44.530 DEBUG 1824 --- [main] c.springboot.mapper.RoleMapper.findById  : ==>  Preparing: select * from roles where id = ? 
-2018-11-17 09:19:44.546 DEBUG 1824 --- [main] c.springboot.mapper.RoleMapper.findById  : ==> Parameters: 1(Integer)
-2018-11-17 09:19:44.608 DEBUG 1824 --- [main] c.springboot.mapper.RoleMapper.findById  : <==      Total: 1
-2018-11-17 09:19:44.608  INFO 1824 --- [main] c.s.SpringbootWebApplicationTests        : [鏍规嵁鐢ㄦ埛鍚嶆煡璇 - [[com.springboot.entity.Role@3e67f5f2]]
-2018-11-17 09:19:44.624 DEBUG 1824 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@17f9d882, started on Sat Nov 17 09:19:41 CST 2018
-2018-11-17 09:19:44.624  INFO 1824 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:19:44.624  INFO 1824 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-11-17 09:19:44.624  INFO 1824 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-11-17 09:20:23.693  INFO 5784 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 5784 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:20:23.693 DEBUG 5784 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:20:23.709  INFO 5784 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:20:23.740 DEBUG 5784 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@17f9d882
-2018-11-17 09:20:25.290 DEBUG 5784 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:20:25.482  INFO 5784 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:20:25.513 DEBUG 5784 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:20:25.591 DEBUG 5784 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:20:25.623 DEBUG 5784 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:20:25.623 DEBUG 5784 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:20:25.748  INFO 5784 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:20:26.029  INFO 5784 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.563 seconds (JVM running for 3.269)
-2018-11-17 09:20:26.312 DEBUG 5784 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@17f9d882, started on Sat Nov 17 09:20:23 CST 2018
-2018-11-17 09:20:26.326  INFO 5784 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:20:40.984  INFO 1708 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 1708 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:20:40.984 DEBUG 1708 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:20:40.984  INFO 1708 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:20:41.031 DEBUG 1708 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@17f9d882
-2018-11-17 09:20:42.643 DEBUG 1708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:20:42.844  INFO 1708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:20:42.860 DEBUG 1708 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:20:42.938 DEBUG 1708 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:20:42.954 DEBUG 1708 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:20:42.969 DEBUG 1708 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:20:43.094  INFO 1708 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:20:43.408  INFO 1708 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.658 seconds (JVM running for 3.349)
-2018-11-17 09:20:43.696 DEBUG 1708 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@17f9d882, started on Sat Nov 17 09:20:41 CST 2018
-2018-11-17 09:20:43.710  INFO 1708 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:22:42.767  INFO 9752 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 9752 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:22:42.767 DEBUG 9752 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:22:42.767  INFO 9752 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:22:42.798 DEBUG 9752 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@17f9d882
-2018-11-17 09:22:44.485 DEBUG 9752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:22:44.680  INFO 9752 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:22:44.695 DEBUG 9752 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:22:44.759 DEBUG 9752 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:22:44.790 DEBUG 9752 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:22:44.806 DEBUG 9752 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:22:44.932  INFO 9752 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:22:45.227  INFO 9752 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.695 seconds (JVM running for 3.424)
-2018-11-17 09:22:45.400 DEBUG 9752 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@17f9d882, started on Sat Nov 17 09:22:42 CST 2018
-2018-11-17 09:22:45.400  INFO 9752 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:24:50.327  INFO 7624 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 7624 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:24:50.327 DEBUG 7624 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:24:50.327  INFO 7624 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:24:50.358 DEBUG 7624 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@350aac89
-2018-11-17 09:24:51.895 DEBUG 7624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:24:52.085  INFO 7624 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:24:52.100 DEBUG 7624 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:24:52.179 DEBUG 7624 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:24:52.210 DEBUG 7624 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:24:52.225 DEBUG 7624 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:24:52.366  INFO 7624 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:24:52.804  INFO 7624 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.713 seconds (JVM running for 3.407)
-2018-11-17 09:24:53.008 DEBUG 7624 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@350aac89, started on Sat Nov 17 09:24:50 CST 2018
-2018-11-17 09:24:53.015  INFO 7624 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:25:23.851  INFO 7448 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 7448 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:25:23.851 DEBUG 7448 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:25:23.867  INFO 7448 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:25:23.898 DEBUG 7448 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@350aac89
-2018-11-17 09:25:25.652 DEBUG 7448 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:25:25.861  INFO 7448 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:25:25.877 DEBUG 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:25:25.955 DEBUG 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:25:25.971 DEBUG 7448 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:25:25.986 DEBUG 7448 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:25:26.081  INFO 7448 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:25:26.347  INFO 7448 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.73 seconds (JVM running for 3.441)
-2018-11-17 09:25:26.535 DEBUG 7448 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@350aac89, started on Sat Nov 17 09:25:23 CST 2018
-2018-11-17 09:25:26.535  INFO 7448 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:30:36.657  INFO 1844 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 1844 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:30:36.657 DEBUG 1844 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:30:36.657  INFO 1844 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:30:36.704 DEBUG 1844 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@350aac89
-2018-11-17 09:30:38.311 DEBUG 1844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:30:38.540  INFO 1844 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:30:38.571 DEBUG 1844 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:30:38.634 DEBUG 1844 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:30:38.665 DEBUG 1844 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:30:38.665 DEBUG 1844 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:30:38.777  INFO 1844 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:30:39.183  INFO 1844 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.779 seconds (JVM running for 3.469)
-2018-11-17 09:30:39.407 DEBUG 1844 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@350aac89, started on Sat Nov 17 09:30:36 CST 2018
-2018-11-17 09:30:39.420  INFO 1844 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:33:20.378  INFO 9060 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 9060 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:33:20.378 DEBUG 9060 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:33:20.378  INFO 9060 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:33:20.427 DEBUG 9060 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4c60d6e9
-2018-11-17 09:33:20.977  WARN 9060 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 09:33:20.977  WARN 9060 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 09:33:20.977  WARN 9060 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 09:33:20.977  WARN 9060 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 09:33:22.109 DEBUG 9060 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:33:22.311  INFO 9060 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:33:22.326 DEBUG 9060 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:33:22.406 DEBUG 9060 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:33:22.437 DEBUG 9060 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:33:22.453 DEBUG 9060 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:33:22.594  INFO 9060 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:33:23.017  INFO 9060 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 2.875 seconds (JVM running for 3.587)
-2018-11-17 09:33:23.253  INFO 9060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-11-17 09:33:23.923  INFO 9060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-11-17 09:33:23.923 DEBUG 9060 --- [main] c.s.mapper.RoleMapper.selectAll_COUNT    : ==>  Preparing: SELECT count(0) FROM roles 
-2018-11-17 09:33:23.954 DEBUG 9060 --- [main] c.s.mapper.RoleMapper.selectAll_COUNT    : ==> Parameters: 
-2018-11-17 09:33:24.017 DEBUG 9060 --- [main] c.s.mapper.RoleMapper.selectAll_COUNT    : <==      Total: 1
-2018-11-17 09:33:24.017 DEBUG 9060 --- [main] c.s.mapper.RoleMapper.selectAll          : ==>  Preparing: SELECT id, name, status, created_at, updated_at FROM roles order by id desc LIMIT ? 
-2018-11-17 09:33:24.017 DEBUG 9060 --- [main] c.s.mapper.RoleMapper.selectAll          : ==> Parameters: 2(Integer)
-2018-11-17 09:33:24.063 DEBUG 9060 --- [main] c.s.mapper.RoleMapper.selectAll          : <==      Total: 2
-2018-11-17 09:33:24.063  INFO 9060 --- [main] c.s.SpringbootWebApplicationTests        : [鏅�氬啓娉昡 - [PageInfo{pageNum=1, pageSize=2, size=2, startRow=1, endRow=2, total=3, pages=2, list=Page{count=true, pageNum=1, pageSize=2, startRow=0, endRow=2, total=3, pages=2, reasonable=true, pageSizeZero=false}[com.springboot.entity.Role@2aaf152b, com.springboot.entity.Role@39bbd9e0], prePage=0, nextPage=2, isFirstPage=true, isLastPage=false, hasPreviousPage=false, hasNextPage=true, navigatePages=8, navigateFirstPage=1, navigateLastPage=2, navigatepageNums=[1, 2]}]
-2018-11-17 09:33:24.063 DEBUG 9060 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4c60d6e9, started on Sat Nov 17 09:33:20 CST 2018
-2018-11-17 09:33:24.079  INFO 9060 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:33:24.079  INFO 9060 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-11-17 09:33:24.362  INFO 9060 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-11-17 09:56:52.899  INFO 7924 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 7924 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:56:52.899 DEBUG 7924 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:56:52.899  INFO 7924 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:56:52.930 DEBUG 7924 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1
-2018-11-17 09:56:53.524  WARN 7924 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 09:56:53.524  WARN 7924 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 09:56:53.540  WARN 7924 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 09:56:53.540  WARN 7924 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 09:56:53.587  INFO 7924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2018-11-17 09:56:53.587  INFO 7924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2018-11-17 09:56:53.619  INFO 7924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2018-11-17 09:56:54.182  INFO 7924 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36aa5503] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 09:56:54.354  WARN 7924 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl' defined in file [E:\java\springboot-learn\target\classes\com\springboot\service\impl\RoleServiceImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springboot.service.impl.RoleServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-
-2018-11-17 09:56:54.370  INFO 7924 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2018-11-17 09:56:54.370 ERROR 7924 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl' defined in file [E:\java\springboot-learn\target\classes\com\springboot\service\impl\RoleServiceImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springboot.service.impl.RoleServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1270) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1164) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$122/1486726131.getObject(Unknown Source) ~[na:na]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) [spring-boot-test-2.1.0.RELEASE.jar:2.1.0.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:na]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springboot.service.impl.RoleServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:184) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1262) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	... 42 common frames omitted
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-
-	at com.springboot.service.impl.RoleServiceImpl.<init>(RoleServiceImpl.java:21) ~[classes/:na]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_11]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_11]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_11]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_11]
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:172) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	... 44 common frames omitted
-
-2018-11-17 09:56:54.370 ERROR 7924 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@72d1ad2e] to prepare test instance [com.springboot.SpringbootWebApplicationTests@65ae095c]
-
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463) [.cp/:na]
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209) [.cp/:na]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleServiceImpl' defined in file [E:\java\springboot-learn\target\classes\com\springboot\service\impl\RoleServiceImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springboot.service.impl.RoleServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1270) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1164) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$122/1486726131.getObject(Unknown Source) ~[na:na]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.0.RELEASE.jar:2.1.0.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	... 25 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.springboot.service.impl.RoleServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:184) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1262) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	... 42 common frames omitted
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-	The constructor Role() is undefined
-
-	at com.springboot.service.impl.RoleServiceImpl.<init>(RoleServiceImpl.java:21) ~[classes/:na]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_11]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_11]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_11]
-	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_11]
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:172) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	... 44 common frames omitted
-
-2018-11-17 09:59:54.392  INFO 1556 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 1556 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 09:59:54.392 DEBUG 1556 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 09:59:54.392  INFO 1556 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 09:59:54.423 DEBUG 1556 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1
-2018-11-17 09:59:55.068  WARN 1556 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 09:59:55.068  WARN 1556 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 09:59:55.083  WARN 1556 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 09:59:55.083  WARN 1556 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 09:59:55.177  INFO 1556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2018-11-17 09:59:55.177  INFO 1556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2018-11-17 09:59:55.208  INFO 1556 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2018-11-17 09:59:55.701  INFO 1556 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff5c903d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 09:59:56.420 DEBUG 1556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 09:59:56.803  INFO 1556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 09:59:56.819 DEBUG 1556 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 09:59:56.912 DEBUG 1556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 09:59:56.928 DEBUG 1556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 09:59:56.944 DEBUG 1556 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 09:59:57.053  INFO 1556 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 09:59:58.039  INFO 1556 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 3.882 seconds (JVM running for 4.587)
-2018-11-17 09:59:58.235  INFO 1556 --- [main] c.s.service.impl.RoleServiceImpl         : 杩涘叆 saveOrUpdate 鏂规硶
-2018-11-17 09:59:58.266 DEBUG 1556 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1, started on Sat Nov 17 09:59:54 CST 2018
-2018-11-17 09:59:58.298  INFO 1556 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:01:32.950  INFO 1808 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 1808 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 10:01:32.950 DEBUG 1808 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 10:01:32.950  INFO 1808 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 10:01:32.982 DEBUG 1808 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1
-2018-11-17 10:01:33.656  WARN 1808 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 10:01:33.656  WARN 1808 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 10:01:33.669  WARN 1808 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 10:01:33.669  WARN 1808 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 10:01:33.716  INFO 1808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2018-11-17 10:01:33.731  INFO 1808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2018-11-17 10:01:33.747  INFO 1808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2018-11-17 10:01:34.123  INFO 1808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c311f497] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 10:01:34.924 DEBUG 1808 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 10:01:35.296  INFO 1808 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:01:35.329 DEBUG 1808 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 10:01:35.407 DEBUG 1808 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 10:01:35.438 DEBUG 1808 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 10:01:35.469 DEBUG 1808 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 10:01:35.579  INFO 1808 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 10:01:36.583  INFO 1808 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 3.868 seconds (JVM running for 4.581)
-2018-11-17 10:01:36.784  INFO 1808 --- [main] c.s.service.impl.RoleServiceImpl         : 杩涘叆 saveOrUpdate 鏂规硶
-2018-11-17 10:01:36.815 DEBUG 1808 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1, started on Sat Nov 17 10:01:32 CST 2018
-2018-11-17 10:01:36.831  INFO 1808 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:03:33.298  INFO 8016 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 8016 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 10:03:33.298 DEBUG 8016 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 10:03:33.298  INFO 8016 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 10:03:33.330 DEBUG 8016 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1
-2018-11-17 10:03:33.925  WARN 8016 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 10:03:33.925  WARN 8016 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 10:03:33.932  WARN 8016 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 10:03:33.932  WARN 8016 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 10:03:33.979  INFO 8016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2018-11-17 10:03:33.995  INFO 8016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2018-11-17 10:03:34.027  INFO 8016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2018-11-17 10:03:34.480  INFO 8016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff5c903d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 10:03:35.342 DEBUG 8016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 10:03:35.765  INFO 8016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:03:35.781 DEBUG 8016 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 10:03:35.844 DEBUG 8016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 10:03:35.876 DEBUG 8016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 10:03:35.876 DEBUG 8016 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 10:03:36.016  INFO 8016 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 10:03:36.850  INFO 8016 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 3.786 seconds (JVM running for 4.506)
-2018-11-17 10:03:37.066  INFO 8016 --- [main] c.s.service.impl.RoleServiceImpl         : 杩涘叆 saveOrUpdate 鏂规硶
-2018-11-17 10:03:37.097 DEBUG 8016 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1, started on Sat Nov 17 10:03:33 CST 2018
-2018-11-17 10:03:37.113  INFO 8016 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:04:40.052  INFO 5032 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 5032 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 10:04:40.052 DEBUG 5032 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 10:04:40.052  INFO 5032 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 10:04:40.083 DEBUG 5032 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1
-2018-11-17 10:04:40.739  WARN 5032 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 10:04:40.739  WARN 5032 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 10:04:40.755  WARN 5032 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 10:04:40.755  WARN 5032 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 10:04:40.802  INFO 5032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2018-11-17 10:04:40.802  INFO 5032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2018-11-17 10:04:40.833  INFO 5032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2018-11-17 10:04:41.272  INFO 5032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff5c903d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 10:04:42.115 DEBUG 5032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 10:04:42.508  INFO 5032 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:04:42.519 DEBUG 5032 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 10:04:42.597 DEBUG 5032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 10:04:42.612 DEBUG 5032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 10:04:42.628 DEBUG 5032 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 10:04:42.753  INFO 5032 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 10:04:43.554  INFO 5032 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 3.752 seconds (JVM running for 4.455)
-2018-11-17 10:04:43.752  INFO 5032 --- [main] c.s.service.impl.RoleServiceImpl         : 杩涘叆 saveOrUpdate 鏂规硶
-2018-11-17 10:04:43.783 DEBUG 5032 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1, started on Sat Nov 17 10:04:40 CST 2018
-2018-11-17 10:04:43.798  INFO 5032 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:05:52.510  INFO 2816 --- [main] c.s.SpringbootWebApplicationTests        : Starting SpringbootWebApplicationTests on SC-201710141551 with PID 2816 (started by Administrator in E:\java\springboot-learn)
-2018-11-17 10:05:52.510 DEBUG 2816 --- [main] c.s.SpringbootWebApplicationTests        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2018-11-17 10:05:52.510  INFO 2816 --- [main] c.s.SpringbootWebApplicationTests        : The following profiles are active: dev
-2018-11-17 10:05:52.541 DEBUG 2816 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1
-2018-11-17 10:05:53.283  WARN 2816 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 10:05:53.284  WARN 2816 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 10:05:53.285  WARN 2816 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.springboot.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
-2018-11-17 10:05:53.285  WARN 2816 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.springboot]' package. Please check your configuration.
-2018-11-17 10:05:53.332  INFO 2816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2018-11-17 10:05:53.332  INFO 2816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2018-11-17 10:05:53.363  INFO 2816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2018-11-17 10:05:53.849  INFO 2816 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc81ee95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 10:05:54.587 DEBUG 2816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2018-11-17 10:05:54.956  INFO 2816 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:05:54.987 DEBUG 2816 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
-2018-11-17 10:05:55.050 DEBUG 2816 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2018-11-17 10:05:55.065 DEBUG 2816 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2018-11-17 10:05:55.081 DEBUG 2816 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2018-11-17 10:05:55.206  INFO 2816 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2018-11-17 10:05:56.207  INFO 2816 --- [main] c.s.SpringbootWebApplicationTests        : Started SpringbootWebApplicationTests in 3.932 seconds (JVM running for 4.657)
-2018-11-17 10:05:56.402  INFO 2816 --- [main] c.s.service.impl.RoleServiceImpl         : 杩涘叆 saveOrUpdate 鏂规硶
-2018-11-17 10:05:56.543  INFO 2816 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2018-11-17 10:05:56.543  INFO 2816 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2018-11-17 10:05:56.951  INFO 2816 --- [main] c.s.SpringbootWebApplicationTests        : [saveOrUpdate] - [Role{id=5, name='u5'}]
-2018-11-17 10:05:56.966  INFO 2816 --- [main] c.s.SpringbootWebApplicationTests        : [get] - [Role{id=5, name='u5'}]
-2018-11-17 10:05:56.966  INFO 2816 --- [main] c.s.service.impl.RoleServiceImpl         : 杩涘叆 delete 鏂规硶
-2018-11-17 10:05:56.966 DEBUG 2816 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5f049ea1, started on Sat Nov 17 10:05:52 CST 2018
-2018-11-17 10:05:58.093  INFO 2816 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 09:25:45.934  INFO 900 --- [main] com.coins.SpringbootWebApplication       : Starting SpringbootWebApplication on Li with PID 900 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 09:25:45.934  INFO 900 --- [main] com.coins.SpringbootWebApplication       : The following profiles are active: dev
+2018-11-18 09:25:46.435  WARN 900 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 09:25:46.447  WARN 900 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 09:25:46.448  WARN 900 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 09:25:46.448  WARN 900 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 09:25:46.479  INFO 900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 09:25:46.479  INFO 900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 09:25:46.495  INFO 900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2018-11-18 09:25:46.745  INFO 900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$40591e27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 09:25:47.026  INFO 900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 09:25:47.042  INFO 900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 09:25:47.042  INFO 900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 09:25:47.042  INFO 900 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 09:25:47.147  INFO 900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 09:25:47.147 DEBUG 900 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 09:25:47.147  INFO 900 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1182 ms
+2018-11-18 09:25:47.163  INFO 900 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 09:25:47.163  INFO 900 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 09:25:47.163  INFO 900 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 09:25:47.163  INFO 900 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 09:25:47.163  INFO 900 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 09:25:47.465 DEBUG 900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 09:25:47.578  INFO 900 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 09:25:47.594 DEBUG 900 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 09:25:47.625 DEBUG 900 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 09:25:47.640 DEBUG 900 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 09:25:47.640 DEBUG 900 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 09:25:47.719  INFO 900 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 09:25:48.047  INFO 900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 09:25:48.047  INFO 900 --- [main] com.coins.SpringbootWebApplication       : Started SpringbootWebApplication in 2.363 seconds (JVM running for 3.057)
+2018-11-18 09:25:58.107  INFO 900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 09:25:58.108  INFO 900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 09:25:58.108 DEBUG 900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 09:25:58.115 DEBUG 900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 09:25:58.115  INFO 900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-11-18 09:25:58.121 DEBUG 900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 09:25:58.125 DEBUG 900 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 09:25:58.138 DEBUG 900 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 09:25:58.347 DEBUG 900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 09:25:58.369 DEBUG 900 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
+2018-11-18 09:25:58.373 DEBUG 900 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-18 09:25:58.386 DEBUG 900 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 09:25:58.562 DEBUG 900 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 09:25:58.563 DEBUG 900 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 09:25:58.575 DEBUG 900 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 09:27:06.953  INFO 900 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 09:27:06.959  INFO 900 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 09:36:00.249  INFO 6628 --- [main] com.coins.SpringbootWebApplicationTests  : Starting SpringbootWebApplicationTests on Li with PID 6628 (started by Administrator in E:\java\springboot-learn)
+2018-11-18 09:36:00.249  INFO 6628 --- [main] com.coins.SpringbootWebApplicationTests  : The following profiles are active: dev
+2018-11-18 09:36:00.274 DEBUG 6628 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6731787b
+2018-11-18 09:36:01.074  WARN 6628 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 09:36:01.074  WARN 6628 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 09:36:01.091  WARN 6628 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 09:36:01.091  WARN 6628 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 09:36:01.138  INFO 6628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 09:36:01.138  INFO 6628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 09:36:01.185  INFO 6628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2018-11-18 09:36:01.600  INFO 6628 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a2578e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 09:36:02.420 DEBUG 6628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 09:36:02.783  INFO 6628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 09:36:02.799 DEBUG 6628 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 09:36:02.877 DEBUG 6628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 09:36:02.908 DEBUG 6628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 09:36:02.924 DEBUG 6628 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 09:36:03.034  INFO 6628 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 09:36:03.790  INFO 6628 --- [main] com.coins.SpringbootWebApplicationTests  : Started SpringbootWebApplicationTests in 3.904 seconds (JVM running for 4.804)
+2018-11-18 09:36:04.144  INFO 6628 --- [main] com.coins.service.impl.RoleServiceImpl   : 进入 saveOrUpdate 方法
+2018-11-18 09:36:04.354  INFO 6628 --- [main] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2018-11-18 09:36:04.356  INFO 6628 --- [main] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2018-11-18 09:36:05.832 DEBUG 6628 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6731787b, started on Sun Nov 18 09:36:00 CST 2018
+2018-11-18 09:36:06.958  INFO 6628 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 09:36:59.379  INFO 588 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 588 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 09:36:59.381  INFO 588 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 09:36:59.913  WARN 588 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 09:36:59.913  WARN 588 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 09:36:59.921  WARN 588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 09:36:59.921  WARN 588 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 09:36:59.956  INFO 588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 09:36:59.958  INFO 588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 09:36:59.981  INFO 588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2018-11-18 09:37:00.250  INFO 588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ddda97c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 09:37:00.525  INFO 588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 09:37:00.540  INFO 588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 09:37:00.541  INFO 588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 09:37:00.547  INFO 588 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 09:37:00.672  INFO 588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 09:37:00.672 DEBUG 588 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 09:37:00.673  INFO 588 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1258 ms
+2018-11-18 09:37:00.698  INFO 588 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 09:37:00.702  INFO 588 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 09:37:00.703  INFO 588 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 09:37:00.703  INFO 588 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 09:37:00.703  INFO 588 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 09:37:01.026 DEBUG 588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 09:37:01.168  INFO 588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 09:37:01.181 DEBUG 588 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 09:37:01.219 DEBUG 588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 09:37:01.232 DEBUG 588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 09:37:01.241 DEBUG 588 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 09:37:01.292  INFO 588 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 09:37:01.688  INFO 588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 09:37:01.692  INFO 588 --- [main] com.coins.CoinsApplication               : Started CoinsApplication in 2.575 seconds (JVM running for 3.243)
+2018-11-18 09:37:10.340  INFO 588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 09:37:10.341  INFO 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 09:37:10.341 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 09:37:10.348 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 09:37:10.349  INFO 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2018-11-18 09:37:10.355 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 09:37:10.359 DEBUG 588 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 09:37:10.372 DEBUG 588 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 09:37:10.597 DEBUG 588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 09:37:10.622 DEBUG 588 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
+2018-11-18 09:37:10.626 DEBUG 588 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-18 09:37:10.642 DEBUG 588 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 09:37:10.816 DEBUG 588 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 09:37:10.816 DEBUG 588 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 09:37:10.830 DEBUG 588 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 09:37:16.289  INFO 588 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 09:37:16.301  INFO 588 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
