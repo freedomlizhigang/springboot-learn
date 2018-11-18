@@ -1,6 +1,6 @@
-package com.springboot.service;
+package com.coins.service;
 
-import com.springboot.entity.Role;
+import com.coins.entity.Role;
 
 public interface RoleService {
 	Role saveOrUpdate(Role role);

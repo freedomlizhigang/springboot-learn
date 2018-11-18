@@ -1,4 +1,4 @@
-package com.springboot.entity;
+package com.coins.entity;
 
 import java.io.Serializable;
 import java.util.Date;

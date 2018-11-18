@@ -1,4 +1,4 @@
-package com.springboot.controller.home;
+package com.coins.controller.home;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springboot.entity.Role;
+import com.coins.entity.Role;
 
 @RestController
 @RequestMapping("/roles")

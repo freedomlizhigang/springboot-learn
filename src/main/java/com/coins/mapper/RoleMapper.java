@@ -1,9 +1,9 @@
-package com.springboot.mapper;
+package com.coins.mapper;
 
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.springboot.entity.Role;
+import com.coins.entity.Role;
 
 import tk.mybatis.mapper.common.BaseMapper;
 
