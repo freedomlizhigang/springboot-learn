@@ -118,3 +118,409 @@
 2018-11-18 09:37:10.830 DEBUG 588 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2018-11-18 09:37:16.289  INFO 588 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2018-11-18 09:37:16.301  INFO 588 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:02:45.604  INFO 7268 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 7268 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 10:02:45.604  INFO 7268 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 10:02:46.073  WARN 7268 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:02:46.073  WARN 7268 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:02:46.078  WARN 7268 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:02:46.078  WARN 7268 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:02:46.109  INFO 7268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 10:02:46.109  INFO 7268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 10:02:46.124  INFO 7268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+2018-11-18 10:02:46.371  INFO 7268 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8ef6cb4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 10:02:46.654  INFO 7268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 10:02:46.669  INFO 7268 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 10:02:46.669  INFO 7268 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 10:02:46.669  INFO 7268 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 10:02:46.779  INFO 7268 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 10:02:46.779 DEBUG 7268 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 10:02:46.779  INFO 7268 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1144 ms
+2018-11-18 10:02:46.794  INFO 7268 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 10:02:46.794  INFO 7268 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 10:02:46.794  INFO 7268 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 10:02:46.794  INFO 7268 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 10:02:46.794  INFO 7268 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 10:02:47.098 DEBUG 7268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 10:02:47.227  INFO 7268 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:02:47.243 DEBUG 7268 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 10:02:47.274 DEBUG 7268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 10:02:47.274 DEBUG 7268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 10:02:47.290 DEBUG 7268 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 10:02:47.336  INFO 7268 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 10:02:47.667  INFO 7268 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 10:02:47.667  INFO 7268 --- [main] com.coins.CoinsApplication               : Started CoinsApplication in 2.315 seconds (JVM running for 2.975)
+2018-11-18 10:02:55.302  INFO 7268 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 10:02:55.303  INFO 7268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 10:02:55.304 DEBUG 7268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 10:02:55.313 DEBUG 7268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 10:02:55.313  INFO 7268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2018-11-18 10:02:55.320 DEBUG 7268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 10:02:55.323 DEBUG 7268 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 10:02:55.336 DEBUG 7268 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 10:02:55.557 DEBUG 7268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:02:55.573 DEBUG 7268 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
+2018-11-18 10:02:55.577 DEBUG 7268 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-18 10:02:55.580 DEBUG 7268 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2018-11-18 10:02:56.185 DEBUG 7268 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 10:02:56.186 DEBUG 7268 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 10:02:56.187 DEBUG 7268 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2018-11-18 10:10:08.524  INFO 7268 --- [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 10:10:08.539  INFO 7268 --- [RMI TCP Connection(16)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:14:53.821  INFO 7544 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 7544 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 10:14:53.821  INFO 7544 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 10:14:54.403  WARN 7544 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:14:54.411  WARN 7544 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:14:54.412  WARN 7544 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:14:54.412  WARN 7544 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:14:54.443  INFO 7544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 10:14:54.443  INFO 7544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 10:14:54.474  INFO 7544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2018-11-18 10:14:54.726  INFO 7544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd63b1fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 10:14:54.991  INFO 7544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 10:14:55.007  INFO 7544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 10:14:55.007  INFO 7544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 10:14:55.007  INFO 7544 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 10:14:55.117  INFO 7544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 10:14:55.117 DEBUG 7544 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 10:14:55.117  INFO 7544 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1264 ms
+2018-11-18 10:14:55.133  INFO 7544 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 10:14:55.133  INFO 7544 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 10:14:55.149  INFO 7544 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 10:14:55.149  INFO 7544 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 10:14:55.149  INFO 7544 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 10:14:55.465 DEBUG 7544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 10:14:55.577  INFO 7544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:14:55.593 DEBUG 7544 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 10:14:55.624 DEBUG 7544 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 10:14:55.639 DEBUG 7544 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 10:14:55.639 DEBUG 7544 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 10:14:55.686  INFO 7544 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 10:14:56.046  INFO 7544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 10:14:56.046  INFO 7544 --- [main] com.coins.CoinsApplication               : Started CoinsApplication in 2.49 seconds (JVM running for 3.168)
+2018-11-18 10:15:11.677  INFO 7544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 10:15:11.679  INFO 7544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 10:15:11.679 DEBUG 7544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 10:15:11.686 DEBUG 7544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 10:15:11.686  INFO 7544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-11-18 10:15:11.693 DEBUG 7544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 10:15:11.697 DEBUG 7544 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 10:15:11.709 DEBUG 7544 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 10:15:11.933 DEBUG 7544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:15:11.965 DEBUG 7544 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
+2018-11-18 10:15:11.968 DEBUG 7544 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-18 10:15:11.972 DEBUG 7544 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2018-11-18 10:15:12.225 DEBUG 7544 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 10:15:12.226 DEBUG 7544 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 10:15:12.250 DEBUG 7544 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:15:46.838  INFO 7544 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 10:15:46.853  INFO 7544 --- [RMI TCP Connection(9)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:32:44.726  INFO 5296 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 5296 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 10:32:44.741  INFO 5296 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 10:32:45.224  WARN 5296 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:32:45.231  WARN 5296 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:32:45.232  WARN 5296 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:32:45.232  WARN 5296 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:32:45.264  INFO 5296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 10:32:45.264  INFO 5296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 10:32:45.295  INFO 5296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2018-11-18 10:32:45.564  INFO 5296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df8eaa30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 10:32:45.831  INFO 5296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 10:32:45.847  INFO 5296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 10:32:45.847  INFO 5296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 10:32:45.847  INFO 5296 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 10:32:45.940  INFO 5296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 10:32:45.940 DEBUG 5296 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 10:32:45.940  INFO 5296 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1168 ms
+2018-11-18 10:32:45.972  INFO 5296 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 10:32:45.972  INFO 5296 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 10:32:45.972  INFO 5296 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 10:32:45.972  INFO 5296 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 10:32:45.972  INFO 5296 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 10:32:46.257 DEBUG 5296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 10:32:46.401  INFO 5296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:32:46.401 DEBUG 5296 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 10:32:46.432 DEBUG 5296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 10:32:46.448 DEBUG 5296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 10:32:46.448 DEBUG 5296 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 10:32:46.502  INFO 5296 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 10:32:46.863  INFO 5296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 10:32:46.863  INFO 5296 --- [main] com.coins.CoinsApplication               : Started CoinsApplication in 2.384 seconds (JVM running for 3.014)
+2018-11-18 10:32:50.108  INFO 5296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 10:32:50.109  INFO 5296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 10:32:50.109 DEBUG 5296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 10:32:50.116 DEBUG 5296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 10:32:50.116  INFO 5296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-11-18 10:32:50.123 DEBUG 5296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 10:32:50.127 DEBUG 5296 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 10:32:50.139 DEBUG 5296 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 10:32:50.361 DEBUG 5296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:32:50.377 DEBUG 5296 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
+2018-11-18 10:32:50.381 DEBUG 5296 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-18 10:32:50.386 DEBUG 5296 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2018-11-18 10:32:50.603 DEBUG 5296 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 10:32:50.604 DEBUG 5296 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 10:32:50.629 DEBUG 5296 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:34:27.007  INFO 5296 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 10:34:27.019  INFO 5296 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:34:30.627  INFO 7432 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 7432 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 10:34:30.627  INFO 7432 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 10:34:31.125  WARN 7432 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:34:31.125  WARN 7432 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:34:31.129  WARN 7432 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:34:31.129  WARN 7432 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:34:31.160  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 10:34:31.160  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 10:34:31.176  INFO 7432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+2018-11-18 10:34:31.441  INFO 7432 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d5f013ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 10:34:31.720  INFO 7432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 10:34:31.720  INFO 7432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 10:34:31.720  INFO 7432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 10:34:31.736  INFO 7432 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 10:34:31.830  INFO 7432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 10:34:31.830 DEBUG 7432 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 10:34:31.830  INFO 7432 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1157 ms
+2018-11-18 10:34:31.861  INFO 7432 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 10:34:31.861  INFO 7432 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 10:34:31.861  INFO 7432 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 10:34:31.861  INFO 7432 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 10:34:31.861  INFO 7432 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 10:34:32.168 DEBUG 7432 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 10:34:32.301  INFO 7432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:34:32.301 DEBUG 7432 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 10:34:32.348 DEBUG 7432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 10:34:32.364 DEBUG 7432 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 10:34:32.364 DEBUG 7432 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 10:34:32.421  INFO 7432 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 10:34:32.762  INFO 7432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 10:34:32.762  INFO 7432 --- [main] com.coins.CoinsApplication               : Started CoinsApplication in 2.368 seconds (JVM running for 3.021)
+2018-11-18 10:34:37.944  INFO 7432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 10:34:37.944  INFO 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 10:34:37.945 DEBUG 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 10:34:37.950 DEBUG 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 10:34:37.951  INFO 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-11-18 10:34:37.957 DEBUG 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 10:34:37.962 DEBUG 7432 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 10:34:37.974 DEBUG 7432 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 10:34:38.196 DEBUG 7432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:34:38.403 DEBUG 7432 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 10:34:38.405 DEBUG 7432 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 10:34:38.428 DEBUG 7432 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:35:30.654  INFO 7432 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 10:35:30.670  INFO 7432 --- [RMI TCP Connection(9)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:35:33.636  INFO 4296 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 4296 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 10:35:33.636  INFO 4296 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 10:35:34.105  WARN 4296 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:35:34.107  WARN 4296 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:35:34.108  WARN 4296 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:35:34.108  WARN 4296 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:35:34.141  INFO 4296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 10:35:34.141  INFO 4296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 10:35:34.156  INFO 4296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+2018-11-18 10:35:34.417  INFO 4296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a24d33cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 10:35:34.689  INFO 4296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 10:35:34.705  INFO 4296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 10:35:34.705  INFO 4296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 10:35:34.705  INFO 4296 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 10:35:34.800  INFO 4296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 10:35:34.800 DEBUG 4296 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 10:35:34.800  INFO 4296 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1118 ms
+2018-11-18 10:35:34.831  INFO 4296 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 10:35:34.831  INFO 4296 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 10:35:34.831  INFO 4296 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 10:35:34.831  INFO 4296 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 10:35:34.831  INFO 4296 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 10:35:35.131 DEBUG 4296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 10:35:35.245  INFO 4296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:35:35.261 DEBUG 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 10:35:35.308 DEBUG 4296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 10:35:35.323 DEBUG 4296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 10:35:35.323 DEBUG 4296 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 10:35:35.379  INFO 4296 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 10:35:35.708  INFO 4296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 10:35:35.708  INFO 4296 --- [main] com.coins.CoinsApplication               : Started CoinsApplication in 2.322 seconds (JVM running for 2.928)
+2018-11-18 10:35:38.912  INFO 4296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 10:35:38.913  INFO 4296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 10:35:38.913 DEBUG 4296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 10:35:38.919 DEBUG 4296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 10:35:38.919  INFO 4296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-11-18 10:35:38.925 DEBUG 4296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 10:35:38.928 DEBUG 4296 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 10:35:38.940 DEBUG 4296 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 10:35:39.146 DEBUG 4296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:35:39.348 DEBUG 4296 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 10:35:39.350 DEBUG 4296 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 10:35:39.370 DEBUG 4296 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:38:07.092  INFO 6056 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 6056 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 10:38:07.093  INFO 6056 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 10:38:07.565  WARN 6056 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:38:07.565  WARN 6056 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:38:07.572  WARN 6056 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:38:07.573  WARN 6056 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:38:07.604  INFO 6056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 10:38:07.605  INFO 6056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 10:38:07.626  INFO 6056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2018-11-18 10:38:07.871  INFO 6056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27c83ae3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 10:38:08.156  INFO 6056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 10:38:08.169  INFO 6056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 10:38:08.170  INFO 6056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 10:38:08.175  INFO 6056 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 10:38:08.273  INFO 6056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 10:38:08.274 DEBUG 6056 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 10:38:08.275  INFO 6056 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1149 ms
+2018-11-18 10:38:08.297  INFO 6056 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 10:38:08.300  INFO 6056 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 10:38:08.300  INFO 6056 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 10:38:08.301  INFO 6056 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 10:38:08.301  INFO 6056 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 10:38:08.592 DEBUG 6056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 10:38:08.719  INFO 6056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:38:08.729 DEBUG 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 10:38:08.763 DEBUG 6056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 10:38:08.773 DEBUG 6056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 10:38:08.792 DEBUG 6056 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 10:38:08.844  INFO 6056 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 10:38:09.169 ERROR 6056 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:960) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at com.coins.CoinsApplication.main(CoinsApplication.java:17) ~[classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:461) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:453) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1108) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:550) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:957) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	... 14 common frames omitted
+
+2018-11-18 10:38:09.174  INFO 6056 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-11-18 10:38:09.184  INFO 6056 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-18 10:38:09.187 ERROR 6056 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-11-18 10:38:09.201  INFO 6056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:38:18.759  INFO 4296 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 10:38:18.775  INFO 4296 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:38:26.993  INFO 6968 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 6968 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 10:38:26.995  INFO 6968 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 10:38:27.482  WARN 6968 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:38:27.483  WARN 6968 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:38:27.490  WARN 6968 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:38:27.490  WARN 6968 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:38:27.522  INFO 6968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 10:38:27.523  INFO 6968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 10:38:27.544  INFO 6968 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2018-11-18 10:38:27.807  INFO 6968 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3458c6f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 10:38:28.082  INFO 6968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 10:38:28.096  INFO 6968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 10:38:28.096  INFO 6968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 10:38:28.101  INFO 6968 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 10:38:28.199  INFO 6968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 10:38:28.200 DEBUG 6968 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 10:38:28.200  INFO 6968 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1170 ms
+2018-11-18 10:38:28.225  INFO 6968 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 10:38:28.229  INFO 6968 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 10:38:28.229  INFO 6968 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 10:38:28.230  INFO 6968 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 10:38:28.230  INFO 6968 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 10:38:28.521 DEBUG 6968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 10:38:28.663  INFO 6968 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:38:28.672 DEBUG 6968 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 10:38:28.705 DEBUG 6968 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 10:38:28.715 DEBUG 6968 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 10:38:28.723 DEBUG 6968 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 10:38:28.768  INFO 6968 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 10:38:29.105  INFO 6968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 10:38:29.108  INFO 6968 --- [main] com.coins.CoinsApplication               : Started CoinsApplication in 2.357 seconds (JVM running for 3.074)
+2018-11-18 10:38:34.009  INFO 6968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 10:38:34.010  INFO 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 10:38:34.010 DEBUG 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 10:38:34.017 DEBUG 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 10:38:34.017  INFO 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-11-18 10:38:34.024 DEBUG 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 10:38:34.027 DEBUG 6968 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 10:38:34.039 DEBUG 6968 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 10:38:34.276 DEBUG 6968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:38:34.455 DEBUG 6968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 10:38:34.457 DEBUG 6968 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 10:38:34.480 DEBUG 6968 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:38:46.786  INFO 6968 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 10:38:46.811  INFO 6968 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:38:50.756  INFO 3828 --- [main] com.coins.CoinsApplication               : Starting CoinsApplication on Li with PID 3828 (E:\java\springboot-learn\target\classes started by Administrator in E:\java\springboot-learn)
+2018-11-18 10:38:50.756  INFO 3828 --- [main] com.coins.CoinsApplication               : The following profiles are active: dev
+2018-11-18 10:38:51.258  WARN 3828 --- [main] t.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:38:51.268  WARN 3828 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:38:51.269  WARN 3828 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.coins.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2018-11-18 10:38:51.269  WARN 3828 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.coins]' package. Please check your configuration.
+2018-11-18 10:38:51.301  INFO 3828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-18 10:38:51.301  INFO 3828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-11-18 10:38:51.332  INFO 3828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2018-11-18 10:38:51.582  INFO 3828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ccd9b9db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 10:38:51.834  INFO 3828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 10:38:51.850  INFO 3828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 10:38:51.850  INFO 3828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 10:38:51.850  INFO 3828 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.1/bin/server;C:/Program Files/Java/jdk-11.0.1/bin;C:\Ruby23-x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;D:\wamp64\bin\php\php7.0.0;C:\ProgramData\ComposerSetup\bin;C:\Program Files\TortoiseSVN\bin;C:\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;"C:\Program Files\Java\jdk-11.0.1\bin";C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin;D:\ServerAdmin\BtSoft\WebSoft\php\7.1;G:\Sts;;.]
+2018-11-18 10:38:51.959  INFO 3828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 10:38:51.959 DEBUG 3828 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2018-11-18 10:38:51.959  INFO 3828 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1157 ms
+2018-11-18 10:38:51.975  INFO 3828 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 10:38:51.990  INFO 3828 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 10:38:51.990  INFO 3828 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 10:38:51.990  INFO 3828 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 10:38:51.990  INFO 3828 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 10:38:52.300 DEBUG 3828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2018-11-18 10:38:52.426  INFO 3828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 10:38:52.426 DEBUG 3828 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1, ResponseBodyAdvice
+2018-11-18 10:38:52.458 DEBUG 3828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2018-11-18 10:38:52.473 DEBUG 3828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2018-11-18 10:38:52.489 DEBUG 3828 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2018-11-18 10:38:52.536  INFO 3828 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-11-18 10:38:52.912  INFO 3828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 10:38:52.912  INFO 3828 --- [main] com.coins.CoinsApplication               : Started CoinsApplication in 2.408 seconds (JVM running for 3.034)
+2018-11-18 10:38:57.110  INFO 3828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 10:38:57.110  INFO 3828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 10:38:57.111 DEBUG 3828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2018-11-18 10:38:57.117 DEBUG 3828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2018-11-18 10:38:57.117  INFO 3828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-11-18 10:38:57.124 DEBUG 3828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2018-11-18 10:38:57.127 DEBUG 3828 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView com.coins.controller.home.HomeController.index()
+2018-11-18 10:38:57.139 DEBUG 3828 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+2018-11-18 10:38:57.351 DEBUG 3828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:38:57.370 DEBUG 3828 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/hello.js", parameters={}
+2018-11-18 10:38:57.373 DEBUG 3828 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2018-11-18 10:38:57.378 DEBUG 3828 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2018-11-18 10:38:57.560 DEBUG 3828 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2018-11-18 10:38:57.560 DEBUG 3828 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2018-11-18 10:38:57.581 DEBUG 3828 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2018-11-18 10:41:04.806  INFO 3828 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 10:41:04.815  INFO 3828 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
