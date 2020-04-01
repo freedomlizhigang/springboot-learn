@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+
+
 @RestController
 @RequestMapping
 public class HomeController {
@@ -17,6 +19,7 @@ public class HomeController {
         // 设置属性
         view.addObject("title", "我的第一个WEB页面");
         view.addObject("desc", "欢迎进入battcn-web 系统");
+        
         return view;
     }
 	
