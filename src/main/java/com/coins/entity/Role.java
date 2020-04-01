@@ -1,16 +1,13 @@
 package com.coins.entity;
 
-import java.io.Serializable;
 import java.util.Date;
-
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table(name="roles")
-public class Role implements Serializable {
-	private static final long serialVersionUID = -9061349218131863060L;
+public class Role {
 	private Integer id;
 	private String name;
 	private Short status;
@@ -62,10 +59,12 @@ public class Role implements Serializable {
 	public Role() {
     }
 
-	public Role(int i, String string, int j) {
+	public Role(int i, String string, int j,Date created_at,Date updated_at) {
 		this.id = i;
 		this.name = string;
 		this.status = (short) j;
+		this.created_at = (Date) created_at;
+		this.updated_at = (Date) updated_at;
 	}
 	
 	@Override

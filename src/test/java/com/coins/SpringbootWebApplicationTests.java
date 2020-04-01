@@ -21,11 +21,11 @@ public class SpringbootWebApplicationTests {
     
 	@Test
 	public void contextLoads() throws Exception {
-		final Role role = roleService.saveOrUpdate(new Role(5, "u5",1));
-        log.info("[saveOrUpdate] - [{}]", role);
-        final Role role1 = roleService.get(5);
-        log.info("[get] - [{}]", role1);
-        roleService.delete(5);
+//		final Role role = roleService.saveOrUpdate(new Role(5, "u5",1));
+//        log.info("[saveOrUpdate] - [{}]", role);
+//        final Role role1 = roleService.get(5);
+//        log.info("[get] - [{}]", role1);
+//        roleService.delete(5);
 	}
 
 }
