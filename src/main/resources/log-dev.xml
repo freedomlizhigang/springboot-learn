@@ -32,7 +32,7 @@
 	<logger name="com.coins.mapper" level="TRACE"></logger>
 	
 	<!-- root级别 DEBUG -->
-	<root level="debug">
+	<root level="info">
 		<!-- 控制台输出 -->
 		<appender-ref ref="STDOUT" />
 	</root>
