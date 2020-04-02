@@ -1,5 +1,9 @@
 package com.coins.entity.rbac;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
@@ -12,14 +16,17 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author 李志刚
- * @since 2020-04-01
+ * @since 2020-04-02
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 public class Sections implements Serializable {
 
-    private static final long serialVersionUID=1L;
+	private static final long serialVersionUID=1L;
+
+	@TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
 
     private String name;
 
@@ -28,6 +35,5 @@ public class Sections implements Serializable {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
-
 
 }

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author 李志刚
- * @since 2020-04-01
+ * @since 2020-04-02
  */
 @Service
 public class RolePrivsServiceImpl extends ServiceImpl<RolePrivsMapper, RolePrivs> implements IRolePrivsService {

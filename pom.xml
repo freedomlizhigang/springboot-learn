@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.coins</groupId>
-	<artifactId>coins</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>coins</name>
-	<description>Coin</description>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.0.RELEASE</version>
+		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
+	<groupId>com.coins</groupId>
+	<artifactId>coins</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>coins</name>
+	<description>山木枝springboot基础开发平台</description>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.12</java.version>
+		<java.version>12</java.version>
 	</properties>
-
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -77,10 +73,6 @@
 		    <artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-pool2</artifactId>
-		</dependency>
-		<dependency>
             <groupId>org.springframework.boot</groupId>  
             <artifactId>spring-boot-starter-redis</artifactId>
             <version>1.4.7.RELEASE</version>
@@ -94,7 +86,6 @@
 		<dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.10</version>
  		</dependency>
 	</dependencies>
 
@@ -118,4 +109,35 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<!-- 换源 -->
+	<repositories>
+       <repository>
+           <id>aliyun</id>
+           <name>aliyun</name>
+           <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+           <layout>default</layout>
+           <releases>
+               <enabled>true</enabled>
+               <updatePolicy>never</updatePolicy>
+           </releases>
+           <snapshots>
+               <enabled>true</enabled>
+               <updatePolicy>never</updatePolicy>
+           </snapshots>
+       </repository>
+   </repositories>
+   <pluginRepositories>
+           <pluginRepository>
+           <id>aliyun</id>
+           <name>aliyun</name>
+           <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           </pluginRepository>
+       </pluginRepositories>
 </project>

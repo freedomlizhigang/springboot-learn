@@ -1,9 +1,6 @@
 package com.coins.service.rbac;
 
 import com.coins.entity.rbac.Sections;
-
-import java.util.List;
-
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -12,7 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author 李志刚
- * @since 2020-04-01
+ * @since 2020-04-02
  */
 public interface ISectionsService extends IService<Sections> {
+
 }
