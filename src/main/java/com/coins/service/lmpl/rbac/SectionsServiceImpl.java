@@ -4,9 +4,6 @@ import com.coins.entity.rbac.Sections;
 import com.coins.mapper.rbac.SectionsMapper;
 import com.coins.service.rbac.ISectionsService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-
-import java.util.List;
-
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,9 +12,9 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author 李志刚
- * @since 2020-04-01
+ * @since 2020-04-02
  */
 @Service
 public class SectionsServiceImpl extends ServiceImpl<SectionsMapper, Sections> implements ISectionsService {
-	
+
 }

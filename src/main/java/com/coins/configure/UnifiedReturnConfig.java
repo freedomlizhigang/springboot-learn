@@ -13,10 +13,9 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 import com.coins.utils.CommonResult;
 
 
-@EnableWebMvc
 @Configuration
 public class UnifiedReturnConfig {
-	@RestControllerAdvice("com.coins.controller.home")
+	@RestControllerAdvice("com.coins.controller")
     static class CommonResultResponseAdvice implements ResponseBodyAdvice<Object>{
         @Override
         public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {
