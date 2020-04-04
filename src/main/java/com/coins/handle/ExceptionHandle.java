@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.coins.utils.CommonResult;
 import com.coins.utils.ResultUtil;
 
-import ch.qos.logback.classic.Logger;
-
 /**
  * 捕获异常的类，返回信息给浏览器，可以自定义返回的code,msg等信息
  */

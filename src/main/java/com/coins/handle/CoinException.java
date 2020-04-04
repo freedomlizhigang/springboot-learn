@@ -3,7 +3,12 @@ package com.coins.handle;
 import com.coins.utils.ResultEnum;
 
 public class CoinException extends RuntimeException {
-	private Integer code;
+	/**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    
+    private Integer code;
 
     public CoinException(ResultEnum resultEnum) {
         super(resultEnum.getMsg());
