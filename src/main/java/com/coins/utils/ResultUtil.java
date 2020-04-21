@@ -1,6 +1,13 @@
 package com.coins.utils;
 
 public class ResultUtil {
+	public static CommonResult success(Integer code, String msg) {
+		CommonResult result = new CommonResult(code,msg);
+        result.setCode(code);
+        result.setMsg(msg);
+        return result;
+    }
+	
 	public static CommonResult success(Integer code, String msg,Object object) {
 		CommonResult result = new CommonResult(code,msg,object);
         result.setCode(code);

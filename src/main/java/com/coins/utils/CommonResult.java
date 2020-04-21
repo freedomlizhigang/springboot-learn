@@ -36,6 +36,10 @@ public class CommonResult<T> {
     public void setData(T data) {
         this.data = data;
     }
+    public CommonResult(Integer code,String msg) {
+    	this.code = code;
+    	this.msg = msg;
+    }
     
     public CommonResult(Integer code,String msg,T data) {
     	this.code = code;
