@@ -1,5 +1,8 @@
 package com.coins.request.rbac;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
 import com.coins.entity.rbac.Sections;
 
 import lombok.Data;
@@ -14,7 +17,17 @@ public class SectionListRequest extends Sections {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public Integer pageSize = 0;
-	public Integer page = 1;
+	//	查询用的ID
+	@NotNull(groups = showDetail.class,message = "ID必填")
+	@Min(value = 1,groups = showDetail.class,message = "ID不能小于1")
+	public Integer detailId;
+	//	分页大小
+	public Integer pageSize = 10;
+	//	页码
+	public Integer page = 0;
+	//	关键字
 	public String key;
+	
+	public interface showDetail{
+    }
 }

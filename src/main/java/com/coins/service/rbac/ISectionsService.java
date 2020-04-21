@@ -12,5 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-04-02
  */
 public interface ISectionsService extends IService<Sections> {
-
+	
 }
