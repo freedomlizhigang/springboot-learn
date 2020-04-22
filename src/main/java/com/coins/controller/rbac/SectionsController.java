@@ -2,6 +2,7 @@ package com.coins.controller.rbac;
 
 
 import java.util.List;
+import java.util.Map;
 
 import javax.validation.Valid;
 
@@ -35,12 +36,12 @@ public class SectionsController {
 	private SectionsServiceImpl sectionImpl;
 	
 	@GetMapping("/list")
-	public CommonResult getAll(SectionListRequest sectionList) {
+	public Object getAll(SectionListRequest sectionList) {
 		return sectionImpl.getList(sectionList);
 	}
 	
 	@GetMapping("/detail")
-	public CommonResult getDetail(@Validated(SectionListRequest.showDetail.class) SectionListRequest section, BindingResult result) {
+	public Object getDetail(@Validated(SectionListRequest.showDetail.class) SectionListRequest section, BindingResult result) {
 		if (result.hasErrors()) {
 			return ResultUtil.error(400, result.getAllErrors().get(0).getDefaultMessage());
 		}
@@ -48,39 +49,35 @@ public class SectionsController {
 	}
 
 	@PostMapping("/create")
-	public CommonResult postCreate(@Validated(Sections.createSection.class) Sections section, BindingResult result) {
+	public Object postCreate(@Validated(Sections.createSection.class) Sections section, BindingResult result) {
 		if (result.hasErrors()) {
 			return ResultUtil.error(400, result.getAllErrors().get(0).getDefaultMessage());
 		}
-		sectionImpl.create(section);
-		return ResultUtil.success(200, "success");
+		return sectionImpl.create(section);
 	}
 	
 	@PostMapping("/update")
-	public CommonResult postUpdate(@Validated(Sections.updateName.class) Sections section, BindingResult result) {
+	public Object postUpdate(@Validated(Sections.updateName.class) Sections section, BindingResult result) {
 		if (result.hasErrors()) {
 			return ResultUtil.error(400, result.getAllErrors().get(0).getDefaultMessage());
 		}
-		sectionImpl.updatename(section);
-		return ResultUtil.success(200, "success");
+		return sectionImpl.updatename(section);
 	}
 	
 	@PostMapping("/updatestatus")
-	public CommonResult postUpdateStatus(@Validated(Sections.updateStatus.class) Sections section, BindingResult result) {
+	public Object postUpdateStatus(@Validated(Sections.updateStatus.class) Sections section, BindingResult result) {
 		if (result.hasErrors()) {
 			return ResultUtil.error(400, result.getAllErrors().get(0).getDefaultMessage());
 		}
-		sectionImpl.updatestatus(section);
-		return ResultUtil.success(200, "success");
+		return sectionImpl.updatestatus(section);
 	}
 	
 	@PostMapping("/remove")
-	public CommonResult postRemove(@Validated(SectionListRequest.showDetail.class) SectionListRequest section, BindingResult result) {
+	public Object postRemove(@Validated(SectionListRequest.showDetail.class) SectionListRequest section, BindingResult result) {
 		if (result.hasErrors()) {
 			return ResultUtil.error(400, result.getAllErrors().get(0).getDefaultMessage());
 		}
-		sectionImpl.removeSection(section);
-		return ResultUtil.success(200, "success");
+		return sectionImpl.removeSection(section);
 	}
 }
 

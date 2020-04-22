@@ -1,5 +1,8 @@
 package com.coins.handle;
 
+/*
+ * 自动填充插入时间与更新时间 
+ */
 
 import java.time.LocalDateTime;
 import org.apache.ibatis.reflection.MetaObject;

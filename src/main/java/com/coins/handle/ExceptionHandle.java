@@ -11,6 +11,7 @@ import com.coins.utils.ResultUtil;
 /**
  * 捕获异常的类，返回信息给浏览器，可以自定义返回的code,msg等信息
  */
+
 @ControllerAdvice
 public class ExceptionHandle {
 
