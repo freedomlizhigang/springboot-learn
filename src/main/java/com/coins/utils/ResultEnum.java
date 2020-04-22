@@ -1,5 +1,9 @@
 package com.coins.utils;
 
+/*
+ * 自定义的异常类型枚举
+ * */
+
 public enum ResultEnum {
     UNKONW_ERROR(-1, "未知错误"),
     SUCCESS(0, "成功"),

@@ -11,6 +11,9 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 import com.coins.utils.CommonResult;
 
+/*
+ * 统一封装返回值,有问题的直接返回，没问题的封装一次
+ */
 
 @Configuration
 public class UnifiedReturnConfig {
@@ -27,7 +30,6 @@ public class UnifiedReturnConfig {
                 return body;
             }
             return new CommonResult<Object>(200,"success",body);
-//        	return body;
         }
     }
 }

@@ -2,6 +2,10 @@ package com.coins.handle;
 
 import com.coins.utils.ResultEnum;
 
+/*
+ * 自定义异常的捕获
+ * */
+
 public class CoinException extends RuntimeException {
 	/**
      *
