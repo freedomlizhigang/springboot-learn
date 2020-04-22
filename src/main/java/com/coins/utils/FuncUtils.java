@@ -2,6 +2,7 @@ package com.coins.utils;
 
 import java.util.Random;
 import java.util.UUID;
+
 /*
  * 一些常用的方法，放到这里来
  */
@@ -27,5 +28,5 @@ public class FuncUtils {
         String id = UUID.randomUUID().toString();    
         id = id.replace("-", "");    
         return id;    
-    } 
+    }
 }
