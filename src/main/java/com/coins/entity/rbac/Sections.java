@@ -4,12 +4,16 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.coins.entity.rbac.Menus.createMenu;
+import com.coins.entity.rbac.Menus.updateMenu;
 import com.coins.request.rbac.SectionListRequest.showDetail;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.time.LocalDateTime;
 
 import javax.validation.constraints.*;
+
+import org.hibernate.validator.constraints.Range;
 
 import java.io.Serializable;
 import lombok.Data;
@@ -41,8 +45,7 @@ public class Sections implements Serializable {
 
     @Null(groups = {updateName.class},message = "状态不传")
     @NotNull(groups = {updateStatus.class,createSection.class},message = "状态必填")
-    @Min(value = 1,groups = {updateStatus.class,createSection.class})
-    @Max(value = 3,groups = {updateStatus.class,createSection.class})
+    @Range(min=1,max=3,groups= {updateStatus.class,createSection.class})
     private Integer status;
     
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")

@@ -23,7 +23,7 @@ import com.coins.utils.ResultUtil;
 
 /**
  * <p>
- *  前端控制器
+ *  用户部门管理
  * </p>
  *
  * @author 李志刚
