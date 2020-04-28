@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @SpringBootApplication(exclude={HibernateJpaAutoConfiguration.class})
-@MapperScan("com.coins.mapper")
+@MapperScan("com.coins.rbac.mapper")
+@MapperScan("com.coins.home.mapper")
 public class CoinsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CoinsApplication.class, args);
