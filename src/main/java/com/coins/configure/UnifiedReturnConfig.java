@@ -17,7 +17,7 @@ import com.coins.utils.CommonResult;
 
 @Configuration
 public class UnifiedReturnConfig {
-	@RestControllerAdvice("com.coins.*.controller")
+	@RestControllerAdvice({"com.coins.home.controller","com.coins.rbac.controller"})
     static class CommonResultResponseAdvice implements ResponseBodyAdvice<Object>{
         @Override
         public boolean supports(MethodParameter methodParameter, Class<? extends HttpMessageConverter<?>> aClass) {

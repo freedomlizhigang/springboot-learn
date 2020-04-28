@@ -1,9 +1,12 @@
 package com.coins.rbac.service.lmpl;
 
+import com.coins.rbac.entity.Admins;
 import com.coins.rbac.entity.Sections;
+import com.coins.rbac.mapper.AdminsMapper;
 import com.coins.rbac.mapper.SectionsMapper;
 import com.coins.rbac.request.SectionListRequest;
 import com.coins.rbac.service.ISectionsService;
+import com.coins.utils.ResultUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
@@ -26,6 +29,8 @@ import org.springframework.stereotype.Service;
 public class SectionsServiceImpl extends ServiceImpl<SectionsMapper, Sections> implements ISectionsService {
 	@Autowired
 	private SectionsMapper sectionMapper;
+	@Autowired
+	private AdminsMapper adminMapper;
 	// 获取列表
 	public Map<String, Object> getList(SectionListRequest sectionlist) {
 		QueryWrapper<Sections> queryWrapper = new QueryWrapper<>();
@@ -60,7 +65,14 @@ public class SectionsServiceImpl extends ServiceImpl<SectionsMapper, Sections> i
 		return detail;
 	}
 //	删除单条
-	public Integer removeSection(SectionListRequest section) {
+	public Object removeSection(SectionListRequest section) {
+		// 先检查部门下有没有用户
+		QueryWrapper<Admins> queryWrapper = new QueryWrapper<>();
+		queryWrapper.eq("section_id",section.detailId);
+		Integer hav = adminMapper.selectCount(queryWrapper);
+		if (hav > 0) {
+			return ResultUtil.error(403, "部门下有用户");
+		}
 		int res = sectionMapper.deleteById(section.detailId);
 		return res;
 	}
