@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.coins.entity.rbac.Sections;
-import com.coins.mapper.rbac.SectionsMapper;
+import com.coins.rbac.entity.Sections;
+import com.coins.rbac.mapper.SectionsMapper;
 
 
 @RunWith(SpringRunner.class)

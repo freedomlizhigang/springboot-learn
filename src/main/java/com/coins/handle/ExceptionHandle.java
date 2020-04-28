@@ -19,7 +19,7 @@ public class ExceptionHandle {
 
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public CommonResult handle(Exception e) {
+    public CommonResult<?> handle(Exception e) {
         if (e instanceof CoinException) {   //判断异常是否是我们定义的异常
         	CoinException coinException = (CoinException) e;
             return ResultUtil.error(coinException.getCode(), coinException.getMessage());
