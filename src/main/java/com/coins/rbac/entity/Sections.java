@@ -42,7 +42,7 @@ public class Sections implements Serializable {
 
     @Null(groups = {updateName.class},message = "状态不传")
     @NotNull(groups = {updateStatus.class,createSection.class},message = "状态必填")
-    @Range(min=1,max=3,groups= {updateStatus.class,createSection.class})
+    @Range(min=0,max=1,groups= {updateStatus.class,createSection.class})
     private Integer status;
     
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
