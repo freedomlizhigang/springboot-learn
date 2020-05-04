@@ -4,10 +4,10 @@
 2. mybatis,mybatis plus,数据库操作，代码生成
 3. lombok:数据注解等功能，简化get/set
 4. 开始rbac
-    1. menu 基本结束
-    2. section 基本结束
-    3. role，权限分配
-    4. admin，部门、角色分配
+    1. menu，权限菜单，基本结束
+    2. section，部门管理，基本结束
+    3. role，权限分配，基本结束
+    4. admin，部门、角色分配，大部分完成
     5. log，aop切面，队列写入，MongoDB数据结构
     6. jwt，Redis + aop权限验证，参数签名&加密
     7. 数据迁移，定时备份
