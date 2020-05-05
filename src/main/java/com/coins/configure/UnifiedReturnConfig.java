@@ -29,7 +29,8 @@ public class UnifiedReturnConfig {
             if (body instanceof CommonResult){
                 return body;
             }
-            return new CommonResult<Object>(200,"success",body);
+            CommonResult<Object> commonResult = new CommonResult<Object>(200,"success",body);
+			return commonResult;
         }
     }
 }
