@@ -8,11 +8,11 @@ public class ResultUtil {
         return result;
     }
 	
-	public static CommonResult<Object> success(Integer code, String msg,Object object) {
-		CommonResult<Object> result = new CommonResult<Object>(code,msg,object);
+	public static CommonResult<?> success(Integer code, String msg,Object data) {
+		CommonResult<?> result = new CommonResult(code,msg,data);
         result.setCode(code);
         result.setMsg(msg);
-        result.setData(object);
+        result.setData(data);
         return result;
     }
 
