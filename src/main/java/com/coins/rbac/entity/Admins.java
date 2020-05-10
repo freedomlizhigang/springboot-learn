@@ -2,6 +2,7 @@ package com.coins.rbac.entity;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -10,11 +11,15 @@ import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.coins.rbac.mapper.RoleUsersMapper;
+import com.coins.rbac.mapper.RolesMapper;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
@@ -88,4 +93,23 @@ public class Admins implements Serializable {
     }
     public interface createAdmin {
     }
+    
+    
+    // 取到所有角色
+//    private List<Roles> roles;
+    // 用户角色关联
+ 	@Autowired
+ 	private RoleUsersMapper roleUserMapper;
+ 	@Autowired
+ 	private RolesMapper roleMapper;
+	public List<Roles> getRoles()
+	{
+	 	QueryWrapper<RoleUsers> queryWrapper = new QueryWrapper<>();
+	 	queryWrapper.eq("user_id",this.getId()).select("role_id");
+	 	List<RoleUsers> role_users = roleUserMapper.selectList(queryWrapper);
+	 	QueryWrapper<Roles> queryRoles = new QueryWrapper<>();
+	 	queryRoles.in("id",role_users);
+	 	List<Roles> roles = roleMapper.selectList(queryRoles);
+	 	return roles;
+	}
 }
