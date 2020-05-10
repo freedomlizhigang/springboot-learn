@@ -12,7 +12,7 @@
 4. 开始rbac
     1. menu，权限菜单，基本结束
         1. 数据校验：https://juejin.im/post/5dafcdcb6fb9a04ddc6258f9
-        2. 安全认证：https://segmentfault.com/a/1190000011450413
+        2. 安全认证：https://segmentfault.com/a/1190000011450413 ， shiro：https://www.xncoding.com/2017/07/07/spring/sb-shiro.html
         3. 树形菜单：https://blog.csdn.net/LDY1016/article/details/85784001
     2. section，部门管理，基本结束
     3. role，权限分配，基本结束
@@ -25,6 +25,8 @@
         4. redis 延时队列：https://blog.csdn.net/qq330983778/article/details/99341671
         5. MongoDB：https://juejin.im/post/5dc3ad1cf265da4d26043fb5
     6. jwt，Redis + aop权限验证，参数签名&加密
+        0. shiro 单个已经完成，参数RSA加密解密，多个shiro
+        1. shiro：https://www.cnblogs.com/ealenxie/p/10610741.html ，https://www.xncoding.com/2017/07/09/spring/sb-jwt.html ，多身份（user/admin）https://blog.csdn.net/xiangwanpeng/article/details/54802509
     7. 数据迁移，定时备份
         1. flyway 迁移：https://blog.csdn.net/feinifi/article/details/103010627
         2. 定时备份：https://my.oschina.net/u/4345490/blog/4183796
