@@ -48,8 +48,8 @@ public class Admins implements Serializable {
     @NotNull(groups = {updateAdmin.class,createAdmin.class},message = "部门不能为空")
     private Integer sectionId;
     
-    @NotEmpty(groups = {createAdmin.class},message = "用户名不能为空")
-    @Null(groups = {updateAdmin.class,updatePwd.class},message = "用户名不传")
+    @NotEmpty(groups = {createAdmin.class,loginData.class},message = "用户名不能为空")
+    @Null(groups = {updateAdmin.class,updatePwd.class,loginData.class},message = "用户名未填写")
     private String name;
     
     @NotNull(groups = {updateAdmin.class,createAdmin.class},message = "真实姓名不能为空")
@@ -59,9 +59,9 @@ public class Admins implements Serializable {
     @Pattern(regexp = "^([a-zA-Z0-9]*[-_]?[a-zA-Z0-9]+)*@([a-zA-Z0-9]*[-_]?[a-zA-Z0-9]+)+[\\.][A-Za-z]{2,3}([\\.][A-Za-z]{2})?$",groups = {updateAdmin.class,createAdmin.class},message = "邮箱格式")
     private String email;
     
-    @NotNull(groups = {updatePwd.class,createAdmin.class},message = "密码不能为空")
-    @Length(groups = {updatePwd.class,createAdmin.class},min=6,max=15,message = "密码长度6-15位")
-    @Null(groups = {updateAdmin.class},message = "密码不传")
+    @NotNull(groups = {updatePwd.class,createAdmin.class,loginData.class},message = "密码不能为空")
+    @Length(groups = {updatePwd.class,createAdmin.class,loginData.class},min=6,max=15,message = "密码长度6-15位")
+    @Null(groups = {updateAdmin.class,loginData.class},message = "密码不传")
     private String password;
 
     private String crypt;
@@ -93,6 +93,7 @@ public class Admins implements Serializable {
     }
     public interface createAdmin {
     }
+    public interface loginData{}
     
     
     // 取到所有角色

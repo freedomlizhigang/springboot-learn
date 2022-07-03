@@ -8,8 +8,6 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 
 import com.coins.rbac.entity.Admins;
-import com.coins.rbac.entity.Admins.createAdmin;
-import com.coins.rbac.entity.Admins.updatePwd;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -42,7 +40,8 @@ public class AdminRequest extends Admins {
 	// 角色数组
 	@NotNull(groups = {updateAdmin.class,createAdmin.class},message = "角色不能为空")
 	public List<Integer> roleId;
-	
+
+	//	详情
 	public interface showDetail{
     }
 }

@@ -3,7 +3,6 @@ package com.coins.aspect;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.aspectj.lang.JoinPoint;
@@ -17,13 +16,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.coins.queue.RedisService;
-
 @Aspect
 @Component
 public class RbacLogAspect {
-	@Resource
-    private RedisService redisService ;
 	/**
      *  定义一个公共的方法，实现服用
      *  拦截*.Controller下面的所有方法
@@ -67,7 +62,7 @@ public class RbacLogAspect {
     	params.put("return", object.toString());
     	System.out.println("###############AfterReturning");
         // 消息队列
-        redisService.saveQueue("CLog-key", params.toString());
+//        redisService.saveQueue("CLog-key", params.toString());
     }
     // 异常情况!
     @AfterThrowing(pointcut = "log()")

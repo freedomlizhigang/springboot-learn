@@ -48,6 +48,13 @@ public class AdminsServiceImpl extends ServiceImpl<AdminsMapper, Admins> impleme
 	private IRoleUsersService roleuserService;
 	@Autowired
 	private HttpServletRequest request;
+	//	登录
+	public Admins loginData(AdminRequest admin) {
+		QueryWrapper<Admins> queryWrapper = new QueryWrapper<>();
+		queryWrapper.eq("id",admin.detailId);
+		Admins detail = adminMapper.selectOne(queryWrapper);
+		return detail;
+	}
 	// 获取列表
 	public Map<String, Object> getList(AdminRequest adminList) {
 		QueryWrapper<Admins> queryWrapper = new QueryWrapper<>();

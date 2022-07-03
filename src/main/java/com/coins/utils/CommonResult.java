@@ -24,4 +24,19 @@ public class CommonResult<T> {
         this.data = data;
     }
 
+	public void setMsg(String msg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setCode(Integer code2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setData(Object data2) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
