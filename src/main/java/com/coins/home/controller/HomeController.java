@@ -3,7 +3,6 @@ package com.coins.home.controller;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.coins.rbac.controller.LoginController;
 import com.coins.utils.RedisUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class HomeController {
 
-	protected static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+	protected static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	@Autowired
 	private RedisUtils redisUtils;
 	
@@ -28,7 +27,8 @@ public class HomeController {
     public Object index() throws Exception {
 //		throw new Exception("sdfa");
 		redisUtils.set("token","ssss");
-		logger.info("测试能不能出日志");
+		Object ojb = redisUtils.get("token");
+		System.out.println(ojb);
 		String str = "hello world!";
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("count", 0);

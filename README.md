@@ -1,5 +1,14 @@
 # springboot-learn
 学习springboot
+0. spring
+   1. 框架基础IOC&DI，bean生命周期
+   2. SpringMVC如何快速上手web项目
+   3. AOP切片实现Filter：可实现用户登录检查，权限检查，日志记录，异常处理，统一返回值等操作
+   4. mybatis数据库操作
+   5. redis操作
+   6. 文件上传，本地+阿里云
+   7. 异步处理，定时任务，队列
+   8. spring security等其他框架
 1. springboot(web/test/configuration-processor/jdbc/mysql-connector/security)
     1. 统一返回与异常处理：https://segmentfault.com/a/1190000020052492 ， https://blog.csdn.net/ZHWang102107/article/details/82931584
 2. mybatis,mybatis plus,数据库操作，代码生成

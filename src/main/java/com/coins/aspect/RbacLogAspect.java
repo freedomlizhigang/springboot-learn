@@ -24,7 +24,13 @@ public class RbacLogAspect {
      *  拦截*.Controller下面的所有方法
      *  拦截UserController下面的userList方法里的任何参数(..表示拦截任何参数)写法：@Before("execution(public * com.angelo.controller.UserController.userList(..))")
      */
-    @Pointcut("execution(public * com.coins.*.controller.*.*(..)) && !execution(public * com.coins.*.controller.*.login(..))")
+    @Pointcut("execution(public * com.coins.rbac.controller.*.*(..)) && !execution(public * com.coins.rbac.controller.*.login(..))")
+    public void rbacLog() {
+    }
+    @Pointcut("execution(public * com.coins.home.controller.*.*(..))")
+    public void homeLog() {
+    }
+    @Pointcut("rbacLog() || homeLog()")
     public void log() {
     }
     // 取参数
