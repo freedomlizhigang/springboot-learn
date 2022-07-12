@@ -1,8 +1,11 @@
 package com.coins.home.controller;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
+import com.coins.home.entity.ApiToken;
 import com.coins.utils.RedisUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,14 +28,27 @@ public class HomeController {
      */
     @GetMapping("/")
     public Object index() throws Exception {
-//		throw new Exception("sdfa");
-		redisUtils.set("token","ssss");
+		ApiToken tokenObj = new ApiToken();
+		tokenObj.name = "Li";
+		tokenObj.age = 23;
+		Map<String,String> privMap = new HashMap();
+		privMap.put("token","a");
+		privMap.put("token1","b");
+		privMap.put("token2","c");
+		privMap.put("token3","d");
+		tokenObj.priv = privMap;
+		List<String> label = new ArrayList<>();
+		label.add("home/s");
+		tokenObj.label = label;
+		redisUtils.set("token",tokenObj);
 		Object ojb = redisUtils.get("token");
 		System.out.println(ojb);
+		ApiToken aobj = (ApiToken) ApiToken.class.cast(ojb);
+		System.out.println(aobj.priv.get("token1"));
 		String str = "hello world!";
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("count", 0);
-		map.put("list", str);
+		map.put("list", aobj.priv.get("token2"));
 		return map;
     }
 	
