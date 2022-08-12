@@ -1,25 +1,22 @@
 package com.coins.utils;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ResultUtil {
-	public static CommonResult<?> success(Integer code, String msg) {
-		CommonResult<?> result = new CommonResult(code,msg);
-        result.setCode(code);
-        result.setMsg(msg);
-        return result;
-    }
-	
-	public static CommonResult<?> success(Integer code, String msg,Object data) {
-		CommonResult<?> result = new CommonResult(code,msg,data);
-        result.setCode(code);
-        result.setMsg(msg);
-        result.setData(data);
+	public static CommonResult<?> success(Object data) {
+		CommonResult<?> result = new CommonResult(data);
         return result;
     }
 
-    public static CommonResult<?> error(Integer code, String msg) {
-    	CommonResult<?> result = new CommonResult(500,"fail");
-        result.setCode(code);
-        result.setMsg(msg);
+    public static CommonResult validator(Integer code, String msg) {
+    	CommonResult<?> result = new CommonResult(code,msg);
+        return result;
+    }
+
+    public static CommonResult error(Integer code,String resultMsg){
+        Object msg = resultMsg;
+        CommonResult<?> result = new CommonResult(code,msg);
         return result;
     }
 }

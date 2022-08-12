@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coins.ums.mapper.MenuMapper">
+    <!--  获取所有父级菜单  -->
+    <select id="getAllParent" parameterType="int" resultMap="listMap">
+        SELECT t2.id,t2.name,t2.url FROM (SELECT @r AS _id, (SELECT @r := parent_id FROM ums_menus WHERE id = _id) AS parent_id, @l := @l + 1 AS lvl FROM (SELECT @r := #{id}, @l := 0) vars, ums_menus h WHERE @r != 0) t1 JOIN ums_menus t2 ON t1._id = t2.id ORDER BY t1.lvl DESC
+    </select>
+    <resultMap id="listMap" type="java.util.HashMap" autoMapping="false">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="realname" column="realname"></result>
+        <result property="url" column="url"></result>
+    </resultMap>
+</mapper>

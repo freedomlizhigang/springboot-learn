@@ -1,11 +1,13 @@
 package com.coins.handle;
 
-import org.slf4j.LoggerFactory;
+import com.coins.utils.CoinException;
+import com.coins.utils.CommonResult;
+import com.coins.utils.CoinLogUtils;
+import org.springframework.validation.BindException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.coins.utils.CommonResult;
 import com.coins.utils.ResultUtil;
 
 /**
@@ -15,18 +17,22 @@ import com.coins.utils.ResultUtil;
 @ControllerAdvice
 public class ExceptionHandle {
 
-    private final static org.slf4j.Logger logger = LoggerFactory.getLogger(ExceptionHandle.class);
-
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public CommonResult<?> handle(Exception e) {
-        if (e instanceof CoinException) {   //判断异常是否是我们定义的异常
-        	CoinException coinException = (CoinException) e;
-            return ResultUtil.error(coinException.getCode(), coinException.getMessage());
-        }else {
-            logger.error("【系统异常】{}", e);
-//            return ResultUtil.error(-1, "未知错误");
+    public CommonResult handle(Exception e) {
+        CoinLogUtils.error("【系统异常】{}", e.toString());
+        // 自定义的异常
+        if (e instanceof CoinException) {
+            return ResultUtil.validator(((CoinException) e).getCode(),((CoinException) e).getErrMsg());
+        }else if (e instanceof BindException) {
+            // 处理校验失败异常
+            BindException eb = (BindException) e;
+            String message = eb.getBindingResult().getFieldError().getDefaultMessage();
+            return ResultUtil.validator(400,message);
+        }else{
             return ResultUtil.error(500,e.toString());
         }
     }
+
+
 }

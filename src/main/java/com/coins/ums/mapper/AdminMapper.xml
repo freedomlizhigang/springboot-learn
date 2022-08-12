@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coins.ums.mapper.AdminMapper">
+    <!--  获取用户列表信息及角色、部门，join先查出来主表可以减少查询次数  -->
+    <select id="getListAndRoleDepartment" parameterType="com.coins.ums.request.AdminRequest" resultMap="listMap">
+        SELECT a.*,r.id as rid,r.name as r_name,d.id as did,d.name as d_name FROM
+        (select * from ums_admins
+        <if test="key != null and key != ''">
+            <bind name="key" value="'%' + key + '%'" />
+            and title like #{key}
+        </if>
+        limit #{offset},#{pageSize}) a LEFT JOIN ums_role_admins ra ON a.id = ra.admin_id LEFT JOIN ums_roles r ON r.id = ra.role_id LEFT JOIN ums_department_admins da ON a.id = da.admin_id LEFT JOIN ums_departments d ON d.id = da.department_id order by a.id asc
+    </select>
+    <resultMap id="listMap" type="java.util.HashMap" autoMapping="false">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="realname" column="realname"></result>
+        <result property="phone" column="phone"></result>
+        <result property="email" column="email"></result>
+        <result property="lasttime" column="lasttime"></result>
+        <result property="lastip" column="lastip"></result>
+        <result property="status" column="status" javaType="Integer"></result>
+        <!--配置角色集合的映射-->
+        <collection property="roles" javaType="ArrayList" ofType="HashMap">
+            <id property="id" column="rid"></id>
+            <result property="name" column="r_name"></result>
+        </collection>
+        <collection property="departments" javaType="ArrayList" ofType="HashMap">
+            <id property="id" column="did"></id>
+            <result property="name" column="d_name"></result>
+        </collection>
+    </resultMap>
+    <resultMap id="listMapBack" type="com.coins.ums.entity.Admin" autoMapping="true">
+        <id property="id" column="id"></id>
+        <!--配置角色集合的映射-->
+        <collection property="roles" javaType="ArrayList" ofType="HashMap">
+            <id property="id" column="rid"></id>
+            <result property="name" column="r_name"></result>
+        </collection>
+        <collection property="departments" javaType="ArrayList" ofType="HashMap">
+            <id property="id" column="did"></id>
+            <result property="name" column="d_name"></result>
+        </collection>
+    </resultMap>
+
+    <!--  根据id获取单个用户信息及角色、部门  -->
+    <select id="getDetailAndRoleDepartment" parameterType="Integer" resultMap="detailMap">
+        SELECT * FROM ums_admins where id = #{id} and del_flag = 0
+    </select>
+    <select id="getDetailAndRoleDepartmentIds" parameterType="Integer" resultMap="detailIdsMap">
+        SELECT * FROM ums_admins where id = #{id} and del_flag = 0
+    </select>
+    <select id="selectRoles" parameterType="Integer" resultType="HashMap">
+        select r.id,r.name from ums_roles r join ums_role_admins ra on r.id = ra.role_id where ra.admin_id = #{id}
+    </select>
+    <select id="selectDepartments" parameterType="Integer" resultType="HashMap">
+        select r.id,r.name from ums_departments r join ums_department_admins ra on r.id = ra.department_id where ra.admin_id = #{id}
+    </select>
+    <select id="selectRoleIds" parameterType="Integer" resultType="Integer">
+        select role_id from ums_role_admins where admin_id = #{id}
+    </select>
+    <select id="selectDepartmentIds" parameterType="Integer" resultType="Integer">
+        select department_id from ums_department_admins where admin_id = #{id}
+    </select>
+    <resultMap id="detailMap" type="java.util.HashMap" autoMapping="false">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="realname" column="realname"></result>
+        <result property="phone" column="phone"></result>
+        <result property="email" column="email"></result>
+        <result property="lasttime" column="lasttime"></result>
+        <result property="lastip" column="lastip"></result>
+        <result property="status" column="status" javaType="Integer"></result>
+        <!--配置角色集合的映射-->
+        <collection property="roles" javaType="ArrayList" ofType="HashMap" column="id" select="selectRoles">
+            <id property="id" column="id"></id>
+            <result property="name" column="name"></result>
+        </collection>
+        <collection property="departments" javaType="ArrayList" ofType="HashMap" column="id" select="selectDepartments">
+            <id property="id" column="id"></id>
+            <result property="name" column="name"></result>
+        </collection>
+    </resultMap>
+    <resultMap id="detailIdsMap" type="java.util.HashMap" autoMapping="false">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="realname" column="realname"></result>
+        <result property="phone" column="phone"></result>
+        <result property="email" column="email"></result>
+        <result property="status" column="status" javaType="Integer"></result>
+        <!--配置角色集合的映射-->
+        <collection property="roleIds" javaType="ArrayList" ofType="Integer" column="id" select="selectRoleIds">
+        </collection>
+        <collection property="departmentIds" javaType="ArrayList" ofType="Integer" column="id" select="selectDepartmentIds">
+        </collection>
+    </resultMap>
+
+    <!--  back 根据id获取单个用户信息及角色、部门  -->
+    <select id="getDetailAndRoleDepartment1" parameterType="Integer" resultMap="detailMap1">
+        SELECT a.*,r.id as rid,r.name as r_name,d.id as did,d.name as d_name FROM ums_admins a LEFT JOIN ums_role_admins ra ON a.id = ra.admin_id LEFT JOIN ums_roles r ON r.id = ra.role_id LEFT JOIN ums_department_admins da ON a.id = da.admin_id LEFT JOIN ums_departments d ON d.id = da.department_id where a.id = #{id}
+    </select>
+    <resultMap id="detailMap1" type="com.coins.ums.entity.Admin" autoMapping="true">
+        <id property="id" column="id"></id>
+        <!--配置角色集合的映射-->
+        <collection property="roles" javaType="ArrayList" ofType="HashMap">
+            <id property="id" column="rid"></id>
+            <result property="name" column="r_name"></result>
+        </collection>
+        <collection property="departments" javaType="ArrayList" ofType="HashMap">
+            <id property="id" column="did"></id>
+            <result property="name" column="d_name"></result>
+        </collection>
+    </resultMap>
+
+    <!--  功能测试  -->
+    <resultMap id="roleMap1" type="java.util.HashMap">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="realname" column="realname"></result>
+        <result property="phone" column="phone"></result>
+        <!--配置角色集合的映射-->
+        <collection property="roles" javaType="java.util.ArrayList">
+            <id property="id" column="rid"></id>
+            <result property="name" column="r_name"></result>
+        </collection>
+        <collection property="departments" javaType="java.util.ArrayList">
+            <id property="id" column="did"></id>
+            <result property="name" column="d_name"></result>
+        </collection>
+    </resultMap>
+    <select id="selectAllRole1" parameterType="Integer" resultMap="roleMap1">
+        SELECT a.*,r.id as rid,r.name as r_name,d.id as did,d.name as d_name FROM ums_admins a LEFT JOIN ums_role_admins ra ON a.id = ra.admin_id LEFT JOIN ums_roles r ON r.id = ra.role_id LEFT JOIN ums_department_admins da ON a.id = da.admin_id LEFT JOIN ums_departments d ON d.id = da.department_id where a.id = 1
+    </select>
+</mapper>

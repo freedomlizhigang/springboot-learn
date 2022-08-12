@@ -7,6 +7,7 @@ import java.util.UUID;
  * 一些常用的方法，放到这里来
  */
 public class FuncUtils {
+
 	/*
 	 * length用户要求产生字符串的长度
 	 */

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coins.cms.mapper.ArticlesMapper">
+    <select id="getList" parameterType="com.coins.cms.request.ArticleRequest" resultMap="listMap">
+        SELECT a.*,r.name as cateName FROM (select * from cms_articles where 1 = 1
+        <if test="key != null and key != ''">
+            <bind name="key" value="'%' + key + '%'" />
+            and title like #{key}
+        </if>
+        <if test="cateid > 0">
+            and cate_id = #{cateid}
+        </if>
+        <if test="startAt != '' and endAt != ''">
+            and publish_at between #{startAt} and #{endAt}
+        </if>
+         limit #{offset},#{pageSize}) a LEFT JOIN cms_categorys r ON a.cate_id = r.id order by a.sort desc,a.id desc
+    </select>
+    <resultMap id="listMap" type="java.util.HashMap" autoMapping="false">
+        <id property="id" column="id"></id>
+        <result property="cateName" column="cateName"></result>
+        <result property="title" column="title"></result>
+        <result property="pushFlag" column="push_flag" javaType="Integer"></result>
+        <result property="hits" column="hits"></result>
+    </resultMap>
+</mapper>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coins.cms.mapper.CategorysMapper">
+    <select id="getAll" resultMap="listMap">
+        SELECT a.*,r.ancestor as parentId FROM cms_categorys a LEFT JOIN cms_cate_relation r ON a.id = r.descendant and r.distance = 1 order by a.sort asc,a.id asc
+    </select>
+    <resultMap id="listMap" type="java.util.HashMap" autoMapping="false">
+        <id property="id" column="id"></id>
+        <result property="parentId" column="parentId"></result>
+        <result property="name" column="name"></result>
+        <result property="title" column="title"></result>
+        <result property="thumb" column="thumb"></result>
+        <result property="url" column="url"></result>
+        <result property="sort" column="sort"></result>
+        <result property="status" column="status"></result>
+    </resultMap>
+
+    <select id="getDetail" parameterType="Integer" resultType="com.coins.cms.entity.Categorys">
+        SELECT a.*,r.ancestor as parentId FROM (select * from cms_categorys where id = #{id}) a LEFT JOIN cms_cate_relation r ON a.id = r.descendant and r.distance = 1
+    </select>
+</mapper>
+
